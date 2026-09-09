@@ -60,8 +60,8 @@ submission guidelines 推断 Demo Track 的匿名、截止日期或附件规则�
 具体截止日期尚未公布，因此用“完成条件”管理进度，不用未经确认的投稿日期倒推。
 
 当前快照：M1 的标题与问题定位已确定。M2 已有完整开放数据池、共享外部模型的三阶段
-agentic 流程、逐跳社区图、输入/输出 schemas、实际 prepared-table 预览和多维报告；上轮
-浏览器检查为 13 项 E2E；最新 `make quality` 为 263 个后端测试，Ruff、mypy、TypeScript
+agentic 流程、逐跳社区图、输入/输出 schemas、实际 prepared-table 预览和多维报告；摘要
+排版更新后，浏览器检查为 16 项 E2E；最新 `make quality` 为 286 个后端测试，Ruff、mypy、TypeScript
 和前端构建均通过。真实 provider 的成功和失败开发记录见
 `docs/agentic-smoke-evidence.md` 与 `docs/stage-io-validation.md`；其中包含只给中文问题、
 不提供维度和权重的多维报告完成态。这些选定案例不构成模型准确率。

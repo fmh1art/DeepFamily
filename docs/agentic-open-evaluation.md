@@ -136,6 +136,33 @@ unavailable。缓存/reasoning 是分项，不能再加进 total。字段含义�
 哈希；没有对全部解压后的 148 GB 数据树重新做逐字节 seal。物理 I/O、API 实际费用和独立
 人工报告事实核查仍是单独的评测工作。
 
+### 本机续跑记录（2026-09-09 11:01，Asia/Shanghai）
+
+恢复前已核实旧 supervisor、driver 和 worker PID 均不存在，运行锁无人持有；保存的
+`running` 状态已过期。当时有 85 个终态，`task-756-r2-no_cross_stage_repair` 只有启动记录，
+原进程停止原因未确定。未修改冻结实现、计划、模型配置或已完成结果。
+
+既有 runner 将该旧尝试记录为 `interrupted`，保留调用 journal，并将无法证明的
+`driver_wall_seconds` 记为 `null`。它仍在 180 个 case 的分母中，没有重跑；随后实际启动
+第 87 个 case `task-974-r2-closed_loop`。恢复后已通过进程列表和持有中的运行锁核实存活。
+
+本机现由用户级 transient service `askdu-agentic-open-v1.service` 托管原有
+`run_agentic_open_study.sh run`。`Restart=no`，不自动重启失败任务；本机用户的
+`Linger=yes` 允许用户服务在终端退出后继续运行，但 transient unit **不会跨机器重启保留**。
+本机用户 journal 无读取权限，因此以服务状态、实际 PID 和研究输出文件共同诊断，不把
+无法读取 journal 当成任务已失败，也不把运行中服务的默认 `Result=success` 当成评测完成。
+
+```bash
+# 只读检查，不启动额外评测，也不调用模型。
+systemctl --user show askdu-agentic-open-v1.service \
+  -p ActiveState -p SubState -p MainPID -p Result -p ExecMainStatus
+./scripts/run_agentic_open_study.sh status
+```
+
+这是操作记录，不是实时进度或效果结论。服务完成后仍需验证完整预测 seal、评分记录及
+`audited-summary-v1`；不能以 systemd 退出码替代研究结果审计。若服务停止，先确认 driver /
+worker 和运行锁均已释放，再按已有冻结协议续跑；不要因一次观察超时而另起一份。
+
 ## 评分不是 UI 成功率
 
 分别记录报告可用性、各阶段状态、修复次数、执行 artifacts、引用完整性、答案字符串及数值

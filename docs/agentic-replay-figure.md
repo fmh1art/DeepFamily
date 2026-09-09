@@ -87,3 +87,26 @@ PDF 仍为 4 页，Figure 2 为 431 ppi，已检查四页及灰度图。`make dr
 检查通过，截图与 18 项 PDF 构建输入校验通过。新 PDF 为 1,131,611 bytes，SHA-256
 `07cd83ab89dd0945b8669b840f0048f814a4512ce532fdb2ff562509a1c780cb`。
 这些是素材和排版校验，不改变尚未完成的投稿门槛。
+
+## 摘要排版变更后的素材复核（2026-09-09）
+
+`Answer at a glance` 改为正常字重正文和按实际溢出展开后，重新采集 task-959 图和同一份
+历史 agentic 记录。旧 PDF、构建记录和完整 figures 目录保存在本机
+`artifacts/paper-history/before-summary-refresh-20260909.05maJq/`，未删除或改写原始运行。
+图 D 现在显示新的摘要排版；Figure 2 的三阶段总览像素未变，当前源码绑定与独立阶段截图
+已更新。采集没有真实模型请求，不把回放当成新评测。
+
+registry 采集与回归使用独立的 `askdu-paper-summary-refresh` 项目、8082 端口和独立 volume，
+5 项采集测试及全部 16 项浏览器回归通过。采集后仅移除该测试项目的容器和网络，volume
+保留。8080 agentic API 的容器 ID 和启动时间未变，`/readyz` 仍为 `coda-open-v1`、16,315 CSV。
+
+`make quality` 为 286 项后端测试、6 项前端辅助测试通过；保留两条第三方弃用警告。
+两组截图、18 项 PDF 构建输入、已报告结果和 `check_submission.sh --draft` 均通过。
+逐页查看重新渲染的四页 PDF，并检查灰度图：没有裁切，历史虚线与当前实线路径可区分。
+图 2 实测 431 ppi，字体全部嵌入；LaTeX 仍有既有的 underfull / balance 提示，未声称零警告。
+新 PDF 为 1,131,611 bytes，SHA-256
+`cd46675d7f6b9c6cd96e49f85e0dbb68c2b5f90948b6daf11de834e5829aa18d`。
+
+本轮未改正文、实验数字或冻结评测实现。`make readiness-draft` 仍为 5 pending、1 fail
+（旧 held-out 实现冻结失效）；视频未同步重录。完整模型评测由独立进程继续进行，尚未
+封存及评分，不将其过程状态填入论文效果表。

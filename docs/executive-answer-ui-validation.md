@@ -36,5 +36,7 @@
 此次只重新部署 Web 容器；不需要重新下载数据，也不改动 API 配置或停止后台评测。
 评测 implementation SHA-256 保持
 `c9c27b70f76a79e80f69cc5de5c5684a95e8ac04dad0d10d9d4938a5911ca9bf`。
-旧论文截图/视频仍是历史 UI 制品，未冒充此次新版截图；相应演示面绑定需要在下一次更新
-投稿素材时重新采集。本次没有声称整体 paper/readiness 门禁通过。
+后续已重新采集两组论文截图并构建四页 PDF，详情见
+[agentic-replay-figure.md](agentic-replay-figure.md#摘要排版变更后的素材复核2026-09-09)。
+旧视频仍是历史 UI 制品，尚未重新录制；截图更新不代表视频已同步，也不代表整体
+paper/readiness 门禁通过。

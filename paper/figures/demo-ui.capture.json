@@ -4,7 +4,7 @@
   "task_id": 959,
   "source_test": "frontend/e2e/demo.spec.ts",
   "source_test_sha256": "08a5ddfd151112108c83f292b992553374fd189e76584bcd9913951c15b79e36",
-  "demo_surface_sha256": "bb4ecd9d0cc18abd8975385beb489f86ffe806cbbab66e88505d9e2b4bf0a36e",
+  "demo_surface_sha256": "c8849756ca9967e0d4a7406632f75ccd4939414fd253dc59d9e1c93e55066032",
   "visible_callouts": [
     "A",
     "B",
@@ -14,7 +14,7 @@
   ],
   "screenshot": {
     "path": "paper/figures/demo-ui.png",
-    "sha256": "0214dea3344f05827b8eab07c859b2a9cfae8ca47381c856ea38414d7c254dc7",
+    "sha256": "4ceaeaa3cd12b5c1762b01649f3922c69f36843529fc87b1bcdc2168b177b466",
     "pixel_width": 2880,
     "pixel_height": 1442,
     "css_width": 1440,

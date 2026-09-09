@@ -27,7 +27,7 @@
     },
     "paper/figures/agentic-replay-v1/capture.json": {
       "bytes": 3495,
-      "sha256": "961c9776a0081205a936b96a1bd7bf43cebcd90115dc81452cff5d88a62e03ad"
+      "sha256": "5b8f78f074181802c0ac6e0845f0f24b178bb9cc91c389623704e86957c32f6e"
     },
     "paper/figures/agentic-replay-v1/overview.png": {
       "bytes": 706573,
@@ -35,11 +35,11 @@
     },
     "paper/figures/demo-ui.capture.json": {
       "bytes": 685,
-      "sha256": "9c5e6660e5372772dcb5aac5b3d87aedcd18e3bdd125a03e7c1947412e7a9bd8"
+      "sha256": "24a1361e5cd985b96c7602dc9c46b2e1608e7ec5dc5305a1339bf71ab0915f3d"
     },
     "paper/figures/demo-ui.png": {
-      "bytes": 800900,
-      "sha256": "0214dea3344f05827b8eab07c859b2a9cfae8ca47381c856ea38414d7c254dc7"
+      "bytes": 796325,
+      "sha256": "4ceaeaa3cd12b5c1762b01649f3922c69f36843529fc87b1bcdc2168b177b466"
     },
     "paper/figures/system-overview.capture.json": {
       "bytes": 581,
@@ -77,7 +77,7 @@
   "output": {
     "bytes": 1131611,
     "path": "paper/main.pdf",
-    "sha256": "07cd83ab89dd0945b8669b840f0048f814a4512ce532fdb2ff562509a1c780cb"
+    "sha256": "cd46675d7f6b9c6cd96e49f85e0dbb68c2b5f90948b6daf11de834e5829aa18d"
   },
   "schema_version": "askdu-paper-build-v1"
 }
