@@ -1,0 +1,17 @@
+{
+  "schema_version": "askdu-video-review-v1",
+  "video_sha256": "REPLACE_WITH_SHA256",
+  "reviewed_at": "2000-01-01T00:00:00+00:00",
+  "reviewers": [
+    "AUTHOR-CODE-1",
+    "AUTHOR-CODE-2"
+  ],
+  "checks": {
+    "audio_intelligible": false,
+    "synchronization_correct": false,
+    "claims_match_paper": false,
+    "captions_legible": false,
+    "data_gap_ending_present": false,
+    "artifact_url_verified": false
+  }
+}

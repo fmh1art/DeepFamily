@@ -1,0 +1,303 @@
+{
+  "schema_version": "askdu-development-smoke-observation-v1",
+  "inspected_at": "2026-09-08T17:54:13.198396+00:00",
+  "evidence_type": "Post-hoc observations of developer-selected persisted real-provider runs, including a report defect and its rerun; not a frozen evaluation or an exhaustive history.",
+  "source": "Local production API, GET /api/v1/runs/{run_id}; no new model calls made during collection.",
+  "canonical_run_hash_algorithm": "SHA-256 of UTF-8 JSON with sorted keys, ensure_ascii=False, separators=(',', ':').",
+  "environment_at_inspection": {
+    "environment_id": "coda-open-v1",
+    "planner_mode": "agentic",
+    "csv_assets": 16315,
+    "asset_count": 30292,
+    "tabular_assets": 17207,
+    "release_coverage": {
+      "revision": "63828a2b652e26a9770555a0cc41e6c8aafdb5d9",
+      "published_communities": 31,
+      "open_runtime_communities": 30,
+      "installed_open_communities": 30,
+      "published_tasks": 1009,
+      "open_runtime_tasks": 996,
+      "source_datasets": 196,
+      "sealed_evaluation_communities": 1
+    }
+  },
+  "runs": [
+    {
+      "label": "shsat_development_smoke",
+      "run_id": "run_b2f30ee773c04f50",
+      "created_at": "2026-09-08T17:33:16.858318Z",
+      "updated_at": "2026-09-08T17:34:38.127268Z",
+      "status": "completed",
+      "question": "What are the Pearson correlation coefficients between the number of students who took the SHSAT and the percentage of Asian, Black/Hispanic, and White students for Grade 8 in 2016, using SHSAT registration and tester data that includes grade level information?",
+      "canonical_run_sha256": "531d09af359aefa2eff4749f44f252021fad2ceae633771a218082c202d69272",
+      "discovery_hops": 7,
+      "preparation_status_counts": {
+        "rejected": 1,
+        "selected": 1
+      },
+      "preparation_attempts": [
+        {
+          "attempt_id": "prep_attempt_002d22d9d4ac4172",
+          "candidate_id": null,
+          "parent_candidate_id": null,
+          "status": "rejected",
+          "reason": "The model action did not match the bounded schema.",
+          "operators": []
+        },
+        {
+          "attempt_id": "prep_attempt_eb67f0a3244b4a6a",
+          "candidate_id": "candidate_1",
+          "parent_candidate_id": null,
+          "status": "selected",
+          "reason": "Build a valid branch filtering SHSAT records to 2016 Grade 8, joining demographics by DBN/Location Code, casting percent fields, then computing three Pearson correlations.",
+          "operators": [
+            "SelectCol",
+            "CastType",
+            "Filter",
+            "SelectCol",
+            "CastType",
+            "Join",
+            "DropNulls",
+            "Terminate"
+          ]
+        }
+      ],
+      "materialized_states": [
+        {
+          "state_id": "state_c5d16e6182b5410e",
+          "rows": 21,
+          "columns": 8,
+          "preview_rows": 5
+        }
+      ],
+      "analysis_artifacts": 4,
+      "notebook_steps": 13,
+      "notebook_phase_counts": {
+        "analyze": 2,
+        "understand": 1,
+        "code": 4,
+        "execute": 4,
+        "answer": 1,
+        "report": 1
+      },
+      "sources": [
+        {
+          "relative_path": "community_43/data_science_for_good/source/D5 SHSAT Registrations and Testers.csv",
+          "rows": 140,
+          "sha256": "c9d73d462407b3ebb9e0284208b3e36a53068db8a14890b192115ddf2be970c1"
+        },
+        {
+          "relative_path": "community_43/data_science_for_good/source/2016 School Explorer.csv",
+          "rows": 1272,
+          "sha256": "5e3ec567b9cdd407a5f85a48d1cea0a1eb2250714db3bab4838a147e7ee68078"
+        }
+      ],
+      "report_sections": 4,
+      "report_title": "Pearson Correlations Between 2016 Grade 8 SHSAT Testers and Demographics",
+      "report_limitations": [
+        "The reported correlations are limited to the 21 joined schools available after filtering to 2016 Grade 8 and matching SHSAT records to School Explorer demographic records.",
+        "Pearson correlation describes linear association only; the supplied artifacts do not establish causation.",
+        "The results cover only the three demographic percentage variables computed here: Percent Asian, Percent Black / Hispanic, and Percent White."
+      ],
+      "prose_contains_depth_limit": false,
+      "prose_contains_known_artifact_id": false,
+      "report_call_hashes": [
+        {
+          "status": "accepted",
+          "request_sha256": "f06a630324b2b1ceafc0d097825ec3c6014f2e3cf4d158f8c379e68b9ca5a8f8",
+          "response_sha256": "055640b894fe7faedcc08bea054ee2245753823df156b4f768c853c4348df839"
+        }
+      ]
+    },
+    {
+      "label": "country_report_before_packet_fix",
+      "run_id": "run_0c6ac396182342db",
+      "created_at": "2026-09-08T17:35:54.149937Z",
+      "updated_at": "2026-09-08T17:38:06.340171Z",
+      "status": "completed",
+      "question": "最适合移民的国家是哪一个？请从生活质量、安全、医疗、生活成本、购买力、通勤、污染和气候等可用维度进行比较，最后给出综合结论；如果没有指定权重，请明确说明。",
+      "canonical_run_sha256": "762508e164fc58db6c5cd0753c7718031a7365091c1caa60a5c2429be891cdb0",
+      "discovery_hops": 5,
+      "preparation_status_counts": {
+        "rejected": 3,
+        "selected": 1
+      },
+      "preparation_attempts": [
+        {
+          "attempt_id": "prep_attempt_c60cc177314448d2",
+          "candidate_id": null,
+          "parent_candidate_id": null,
+          "status": "rejected",
+          "reason": "The model action did not match the bounded schema.",
+          "operators": []
+        },
+        {
+          "attempt_id": "prep_attempt_57c4692b601f46a8",
+          "candidate_id": null,
+          "parent_candidate_id": null,
+          "status": "rejected",
+          "reason": "The model action did not match the bounded schema.",
+          "operators": []
+        },
+        {
+          "attempt_id": "prep_attempt_52e3bd8bce6044ed",
+          "candidate_id": null,
+          "parent_candidate_id": null,
+          "status": "rejected",
+          "reason": "The model action did not match the bounded schema.",
+          "operators": []
+        },
+        {
+          "attempt_id": "prep_attempt_5c94fa307cc84ffa",
+          "candidate_id": "candidate_1",
+          "parent_candidate_id": null,
+          "status": "selected",
+          "reason": "为回答“最适合移民的国家”，使用唯一可用的2020国家生活质量数据集；对国家名和全部数值指标显式类型转换并删除关键指标缺失行，然后分别发布生活质量、安全、医疗、生活成本、住房负担、购买力、通勤、污染和气候维度的排名。由于问题未给出权重，计划不构造任意加权总分，而以数据集中已有的 Quality of Life Index 作为现成综合指数，并保留各维度结果用于综合讨论和说明限制。",
+          "operators": [
+            "CastType",
+            "DropNulls",
+            "Terminate"
+          ]
+        }
+      ],
+      "materialized_states": [
+        {
+          "state_id": "state_5e74822b54064fd1",
+          "rows": 80,
+          "columns": 10,
+          "preview_rows": 5
+        }
+      ],
+      "analysis_artifacts": 10,
+      "notebook_steps": 25,
+      "notebook_phase_counts": {
+        "analyze": 2,
+        "understand": 1,
+        "code": 10,
+        "execute": 10,
+        "answer": 1,
+        "report": 1
+      },
+      "sources": [
+        {
+          "relative_path": "community_28/countries-dataset-2020/source/Quality of life index by countries 2020.csv",
+          "rows": 80,
+          "sha256": "25d69f3352794ef41a60940e545edde3fa5a962436ac96e8d45b095d71518da7"
+        }
+      ],
+      "report_sections": 6,
+      "report_title": "2020年80个国家移民适宜性的可用维度比较",
+      "report_limitations": [
+        "当前证据包中的排名表内容被显示为“[depth limit]”，缺少可读的国家名称和具体指数值。",
+        "问题未指定生活质量、安全、医疗、成本、购买力、通勤、污染和气候之间的权重，因此不能构造主观加权排名。",
+        "证据仅显示完整样本为80个国家，不能推断未覆盖国家的表现。",
+        "当前可用证据只覆盖列出的指数维度；其他移民决策因素未在已执行分析中覆盖。",
+        "数据来源文件名指向2020年数据，因此结论不应外推为其他年份的现状。"
+      ],
+      "prose_contains_depth_limit": true,
+      "prose_contains_known_artifact_id": true,
+      "report_call_hashes": [
+        {
+          "status": "accepted",
+          "request_sha256": "33b927b5f7d57004a0cfc6dc1d26cb97fcf611236b23d318d6bd0681d755eec0",
+          "response_sha256": "b2ecff0952bfc032d107bb6507bf62374ccc4d4cbff5a8dbc46f2edf23305372"
+        }
+      ]
+    },
+    {
+      "label": "country_report_after_packet_fix",
+      "run_id": "run_23578ed4a53f46e3",
+      "created_at": "2026-09-08T17:42:12.350158Z",
+      "updated_at": "2026-09-08T17:44:37.992651Z",
+      "status": "completed",
+      "question": "最适合移民的国家是哪一个？请从生活质量、安全、医疗、生活成本、购买力、通勤、污染和气候等可用维度进行比较，最后给出综合结论；如果没有指定权重，请明确说明。",
+      "canonical_run_sha256": "4f2d6bb1599b0f7b0f0d6dd174eedcb70cbf03be84f09b0473deda511c3f4580",
+      "discovery_hops": 5,
+      "preparation_status_counts": {
+        "rejected": 3,
+        "selected": 1
+      },
+      "preparation_attempts": [
+        {
+          "attempt_id": "prep_attempt_aee5d6794a484cca",
+          "candidate_id": null,
+          "parent_candidate_id": null,
+          "status": "rejected",
+          "reason": "The model action did not match the bounded schema.",
+          "operators": []
+        },
+        {
+          "attempt_id": "prep_attempt_ccfdcefb234b448b",
+          "candidate_id": null,
+          "parent_candidate_id": null,
+          "status": "rejected",
+          "reason": "The model action did not match the bounded schema.",
+          "operators": []
+        },
+        {
+          "attempt_id": "prep_attempt_8ca624dc1579478f",
+          "candidate_id": null,
+          "parent_candidate_id": null,
+          "status": "rejected",
+          "reason": "The model action did not match the bounded schema.",
+          "operators": []
+        },
+        {
+          "attempt_id": "prep_attempt_127b7f41027e43cc",
+          "candidate_id": "candidate_1",
+          "parent_candidate_id": null,
+          "status": "selected",
+          "reason": "Create a validated comparison plan using all available country quality-of-life dimensions; no custom weights are assumed.",
+          "operators": [
+            "CastType",
+            "DropNulls",
+            "Deduplicate",
+            "Terminate"
+          ]
+        }
+      ],
+      "materialized_states": [
+        {
+          "state_id": "state_f7924cfa0fcb47fc",
+          "rows": 80,
+          "columns": 10,
+          "preview_rows": 5
+        }
+      ],
+      "analysis_artifacts": 11,
+      "notebook_steps": 27,
+      "notebook_phase_counts": {
+        "analyze": 2,
+        "understand": 1,
+        "code": 11,
+        "execute": 11,
+        "answer": 1,
+        "report": 1
+      },
+      "sources": [
+        {
+          "relative_path": "community_28/countries-dataset-2020/source/Quality of life index by countries 2020.csv",
+          "rows": 80,
+          "sha256": "25d69f3352794ef41a60940e545edde3fa5a962436ac96e8d45b095d71518da7"
+        }
+      ],
+      "report_sections": 5,
+      "report_title": "最适合移民国家的多维度比较",
+      "report_limitations": [
+        "本报告仅基于所提供的2020年国家生活质量数据，未纳入之后年份的变化。",
+        "问题未指定权重，因此没有计算新的加权综合分；综合判断主要参考数据集中已有的生活质量指数。",
+        "移民适配度还可能取决于签证政策、就业机会、语言、教育、税制、家庭团聚和文化适应等因素，这些维度不在可用数据中。",
+        "各指数是国家层面的汇总，不能反映城市、地区、职业和家庭结构差异。"
+      ],
+      "prose_contains_depth_limit": false,
+      "prose_contains_known_artifact_id": false,
+      "report_call_hashes": [
+        {
+          "status": "accepted",
+          "request_sha256": "cb600988a8f1ad4fd393b99852c99d748f663b6ca940b6d677a146b0db14a25a",
+          "response_sha256": "bef679160ae1afd2649648ea1563661597a7a66bcc1289b7434232f26e47b415"
+        }
+      ]
+    }
+  ]
+}

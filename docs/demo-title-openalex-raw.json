@@ -1,0 +1,74 @@
+{
+  "database": "OpenAlex",
+  "queried_on": "2026-09-06",
+  "requests": [
+    {
+      "label": "Graphy",
+      "doi": "10.1145/3722212.3725106",
+      "endpoint": "https://api.openalex.org/works/https://doi.org/10.1145/3722212.3725106?select=id%2Cdoi%2Ctitle%2Cpublication_year%2Cprimary_location%2Cauthorships",
+      "http_status": 429,
+      "response": {
+        "error": "Rate limit exceeded",
+        "message": "Insufficient budget. This request costs $0.0001 but you only have $0 remaining. Resets at midnight UTC. Need more? Add funds at https://openalex.org/pricing",
+        "retryAfter": 7875,
+        "costUsd": 0.0001,
+        "dailyRemainingUsd": 0,
+        "prepaidRemainingUsd": 0,
+        "creditsRequired": 1,
+        "creditsRemaining": 0,
+        "onetimeCreditsRemaining": 0
+      }
+    },
+    {
+      "label": "Sentence-to-Model",
+      "doi": "10.1145/3722212.3725134",
+      "endpoint": "https://api.openalex.org/works/https://doi.org/10.1145/3722212.3725134?select=id%2Cdoi%2Ctitle%2Cpublication_year%2Cprimary_location%2Cauthorships",
+      "http_status": 429,
+      "response": {
+        "error": "Rate limit exceeded",
+        "message": "Insufficient budget. This request costs $0.0001 but you only have $0 remaining. Resets at midnight UTC. Need more? Add funds at https://openalex.org/pricing",
+        "retryAfter": 7874,
+        "costUsd": 0.0001,
+        "dailyRemainingUsd": 0,
+        "prepaidRemainingUsd": 0,
+        "creditsRequired": 1,
+        "creditsRemaining": 0,
+        "onetimeCreditsRemaining": 0
+      }
+    },
+    {
+      "label": "QueryArtisan",
+      "doi": "10.14778/3750601.3750647",
+      "endpoint": "https://api.openalex.org/works/https://doi.org/10.14778/3750601.3750647?select=id%2Cdoi%2Ctitle%2Cpublication_year%2Cprimary_location%2Cauthorships",
+      "http_status": 429,
+      "response": {
+        "error": "Rate limit exceeded",
+        "message": "Insufficient budget. This request costs $0.0001 but you only have $0 remaining. Resets at midnight UTC. Need more? Add funds at https://openalex.org/pricing",
+        "retryAfter": 7873,
+        "costUsd": 0.0001,
+        "dailyRemainingUsd": 0,
+        "prepaidRemainingUsd": 0,
+        "creditsRequired": 1,
+        "creditsRemaining": 0,
+        "onetimeCreditsRemaining": 0
+      }
+    },
+    {
+      "label": "TableCopilot",
+      "doi": "10.14778/3750601.3750681",
+      "endpoint": "https://api.openalex.org/works/https://doi.org/10.14778/3750601.3750681?select=id%2Cdoi%2Ctitle%2Cpublication_year%2Cprimary_location%2Cauthorships",
+      "http_status": 429,
+      "response": {
+        "error": "Rate limit exceeded",
+        "message": "Insufficient budget. This request costs $0.0001 but you only have $0 remaining. Resets at midnight UTC. Need more? Add funds at https://openalex.org/pricing",
+        "retryAfter": 7872,
+        "costUsd": 0.0001,
+        "dailyRemainingUsd": 0,
+        "prepaidRemainingUsd": 0,
+        "creditsRequired": 1,
+        "creditsRemaining": 0,
+        "onetimeCreditsRemaining": 0
+      }
+    }
+  ]
+}

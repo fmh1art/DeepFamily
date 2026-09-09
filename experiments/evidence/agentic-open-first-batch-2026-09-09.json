@@ -1,0 +1,27 @@
+{
+  "schema_version": "askdu-open-operational-check-v1",
+  "date": "2026-09-09",
+  "scope": "First six scheduled cases only; operational check, not scored answer quality or a full-study estimate.",
+  "plan_sha256": "a0ccd26a553a963ad1cc66ebe02c74663ce6ec6c15395129953307b9103b0664",
+  "source_sha256": "c9c27b70f76a79e80f69cc5de5c5684a95e8ac04dad0d10d9d4938a5911ca9bf",
+  "implementation_archive_sha256": "4074166366e87dd3f39552c3187dcf4a2f996fafece2e6bc6afa4628bd6a33e2",
+  "case_result_sha256": {
+    "task-590-r1-closed_loop": "8562adff6d7f4b9784c51eaadd7750550992c4695209e552647a2a84ea049d78",
+    "task-590-r1-no_cross_stage_repair": "f65a41212d314f6788a6f6b9722a19a4c04dbdcacfd7707315047738a81ca506",
+    "task-181-r1-no_cross_stage_repair": "f06ae069cb62ff4eff85c921a104523bd0729d9991b2657a5e9873e39554913c",
+    "task-181-r1-closed_loop": "b3254f9799db8931f783c98e529f003704e3d1b10701e7cc5faf02db70a63682",
+    "task-1008-r1-closed_loop": "203d21bba24a41e748aa8405c71572fc7624889d1508bb9ed4b6eda24e82921e",
+    "task-1008-r1-no_cross_stage_repair": "9ab9a3eb1cebab292cba3cf3cf265845787b93a17bee8e310781e79d8907d3a9"
+  },
+  "status_counts": {"completed": 4, "insufficient": 2},
+  "logical_calls": 75,
+  "http_attempts": 75,
+  "http_status_counts": {"200": 75},
+  "observed_prompt_tokens": 467522,
+  "observed_completion_tokens": 29382,
+  "observed_total_tokens": 496904,
+  "attempts_with_total_token_receipt": 75,
+  "attempts_without_total_token_receipt": 0,
+  "summed_driver_wall_seconds": 492.8469588663429,
+  "interpretation": "Token receipts are not billing amounts. Driver durations exclude pauses between batches and are not Web end-to-end latency. Completed means report availability, not correctness. Both task-1008 modes returned data_gap; the closed-loop case recorded one repair and still did not release a report. No benchmark answer was read for this check."
+}

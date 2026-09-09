@@ -1,0 +1,63 @@
+# LaTeX build products
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/*.toc
+paper/main.pdf
+
+# Checksum-pinned upstream paper templates; reproduce with `make paper-assets`.
+paper/acmart.cls
+paper/pvldb.sty
+paper/ACM-Reference-Format.bst
+
+# Editor and operating-system files
+.DS_Store
+*.swp
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.tsbuildinfo
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/
+
+# Runtime state and generated artifacts
+runtime/
+artifacts/
+logs/
+*.sqlite3
+
+# Downloaded research assets. Reproduce them from the checked-in manifests.
+data/external/
+data/derived/
+data/pilots/heldout-v1-questions.json
+data/manifests/coda-community-45-extracted.sha256
+supported_research_paper/
+third_party/CoDA-Bench/
+third_party/DeepPrep/
+third_party/DeepAnalyze/
+
+# Local experiment outputs
+experiments/results/

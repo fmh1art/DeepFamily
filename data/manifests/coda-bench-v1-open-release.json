@@ -1,0 +1,219 @@
+{
+  "schema_version": "askdu-coda-release-v1",
+  "benchmark": {
+    "name": "CoDA-Bench",
+    "repository": "RUC-DataLab/CoDA-Bench",
+    "repository_type": "dataset",
+    "revision": "63828a2b652e26a9770555a0cc41e6c8aafdb5d9",
+    "metadata": [
+      {
+        "path": "coda_bench.json",
+        "bytes": 3234825,
+        "sha256": "4dbec6fa60b9f1653395c63fef1406a786ce0a9434a7d973fb2e3967e95f2559"
+      },
+      {
+        "path": "coda_bench_hard.json",
+        "bytes": 718333,
+        "sha256": "0918803fc6c26c94e3074615ac20792d5cf5e74d7d0933a61347f613d21ce336"
+      }
+    ]
+  },
+  "published_release": {
+    "task_count": 1009,
+    "community_count": 31,
+    "source_dataset_count": 199,
+    "compressed_storage_bytes": 45609628644
+  },
+  "open_runtime_scope": {
+    "task_count": 996,
+    "community_count": 30,
+    "source_dataset_count": 196,
+    "compressed_archive_bytes": 45593031762
+  },
+  "sealed_evaluation_scope": {
+    "community_count": 1,
+    "policy": "excluded_from_development_index_and_open_runtime"
+  },
+  "archives": [
+    {
+      "community_id": 17,
+      "path": "archives/community_17.tar.zst",
+      "bytes": 4277326272,
+      "sha256": "5f1e13b03c28581c5e0b102a312330c3359dec83babef84d504e9f9290d6718b"
+    },
+    {
+      "community_id": 18,
+      "path": "archives/community_18.tar.zst",
+      "bytes": 6674814,
+      "sha256": "abbd060ce26085198300fe088c00fd9ab56c2874b40fbf86634785837bb61d75"
+    },
+    {
+      "community_id": 21,
+      "path": "archives/community_21.tar.zst",
+      "bytes": 14635559,
+      "sha256": "a356433dd1ec02f6f8bcec3a968f57bf89f39d029ce9dd5ccb36890ccec38220"
+    },
+    {
+      "community_id": 25,
+      "path": "archives/community_25.tar.zst",
+      "bytes": 271119772,
+      "sha256": "aeb3e0de60e4074b8fb81f8e6b78b1354fe01297cd0279891362b03dfd2ab444"
+    },
+    {
+      "community_id": 26,
+      "path": "archives/community_26.tar.zst",
+      "bytes": 2153525686,
+      "sha256": "178e49437be7112e80e0a0494229720a88def17d430bbac91e177ea3658dc4bc"
+    },
+    {
+      "community_id": 27,
+      "path": "archives/community_27.tar.zst",
+      "bytes": 1975388492,
+      "sha256": "8787f622ea18a88c386376bd866871740c6e68f92116f5862725ea069b559fbf"
+    },
+    {
+      "community_id": 28,
+      "path": "archives/community_28.tar.zst",
+      "bytes": 1872609553,
+      "sha256": "ffdc9f8a8efe5f63898a51b4ba18a03d0ac91be72ef01bc80f93b537d6b3967d"
+    },
+    {
+      "community_id": 29,
+      "path": "archives/community_29.tar.zst",
+      "bytes": 1202296599,
+      "sha256": "36693d4efa0b8b62e8e67150bb791937800f49eb53b59461630b6c53bf6e7440"
+    },
+    {
+      "community_id": 30,
+      "path": "archives/community_30.tar.zst",
+      "bytes": 882675641,
+      "sha256": "ac973a974f7eec56eb3461c25d641034752f6e196971384aa50aab7fe21dfccd"
+    },
+    {
+      "community_id": 31,
+      "path": "archives/community_31.tar.zst",
+      "bytes": 9056083509,
+      "sha256": "031b56aaaf8c24960a79662a07ff0af7f69ec29188ae18a0ee8c0831d7f8bbdb"
+    },
+    {
+      "community_id": 32,
+      "path": "archives/community_32.tar.zst",
+      "bytes": 789727398,
+      "sha256": "ea64f85b554f74082824294bbc9ab85b5000bda82c900b1f9cc4706f7027eda8"
+    },
+    {
+      "community_id": 33,
+      "path": "archives/community_33.tar.zst",
+      "bytes": 368105038,
+      "sha256": "8cc887f6e8a0c4a3379a07a8d1359fcc9e7de81881c417b2b5db9ee430c8b26d"
+    },
+    {
+      "community_id": 34,
+      "path": "archives/community_34.tar.zst",
+      "bytes": 692689992,
+      "sha256": "4d5963e41fd49463f41bb391ccf0bf87af9a2a5509576673cf4ce0f0c05c5da4"
+    },
+    {
+      "community_id": 35,
+      "path": "archives/community_35.tar.zst",
+      "bytes": 362728055,
+      "sha256": "0c69eb25d3e50345a6ec10b93d47adfd069d84febc7a44d1c138b3299751a41d"
+    },
+    {
+      "community_id": 36,
+      "path": "archives/community_36.tar.zst",
+      "bytes": 1597775284,
+      "sha256": "e888f3d59ef30a2522a88fb9835dd4321f833ec90fafa8c038a4731cf07d0490"
+    },
+    {
+      "community_id": 37,
+      "path": "archives/community_37.tar.zst",
+      "bytes": 17728529,
+      "sha256": "ee199ec11635d04717fe08bd3cd435e77b52c3bb747916c07191227a4c5e2dda"
+    },
+    {
+      "community_id": 38,
+      "path": "archives/community_38.tar.zst",
+      "bytes": 330745452,
+      "sha256": "9cfb300340a1893fa36b2af09ec35ffe846aa8b591a56c1aa0a7f9a8fe887539"
+    },
+    {
+      "community_id": 39,
+      "path": "archives/community_39.tar.zst",
+      "bytes": 832611534,
+      "sha256": "653c6e1972fb4d54b128c9ff84a09990ee74e29e1243846ad01423a7faff88d4"
+    },
+    {
+      "community_id": 40,
+      "path": "archives/community_40.tar.zst",
+      "bytes": 312897942,
+      "sha256": "1a11374cc490ad282ce28422447786beb993f10cb89d7748026c4c5b21e81063"
+    },
+    {
+      "community_id": 41,
+      "path": "archives/community_41.tar.zst",
+      "bytes": 1226435900,
+      "sha256": "b4c14eab5454b8d747f194770a10b696426fdfbbc2c3b0e91b98ac627c6ba005"
+    },
+    {
+      "community_id": 42,
+      "path": "archives/community_42.tar.zst",
+      "bytes": 1306530429,
+      "sha256": "d28ed0faa6d5276ea06ad6c1a4529670de3a2d56cabc6c6660153c297471badb"
+    },
+    {
+      "community_id": 43,
+      "path": "archives/community_43.tar.zst",
+      "bytes": 5144617,
+      "sha256": "30771af71c5a37c110b91f5e443e9c2f971ad50e6847bcb8385bee69a2a61aa0"
+    },
+    {
+      "community_id": 44,
+      "path": "archives/community_44.tar.zst",
+      "bytes": 103870426,
+      "sha256": "7d8524b2b8fe52a2ba4ca276f3dc00f24a007f482e21ad01a59fa65144745c7b"
+    },
+    {
+      "community_id": 46,
+      "path": "archives/community_46.tar.zst",
+      "bytes": 1282037972,
+      "sha256": "d11d476ed3e3cbd1f64144de148a5f24f1933857cb6aa0c1e99118e49a723a79"
+    },
+    {
+      "community_id": 47,
+      "path": "archives/community_47.tar.zst",
+      "bytes": 2588688,
+      "sha256": "de5752d062e893b7f386d2912829ca66c94b232ed8f609110583a125bf75ad17"
+    },
+    {
+      "community_id": 48,
+      "path": "archives/community_48.tar.zst",
+      "bytes": 914225987,
+      "sha256": "f88f916d090b4c4656e50bee4f2faaa465b46f562dec3697bf3ffd7bd1534276"
+    },
+    {
+      "community_id": 49,
+      "path": "archives/community_49.tar.zst",
+      "bytes": 116883879,
+      "sha256": "2250ffd503ee09a25e22d69ee300dcf619951fb26154f4104b0d1a854410bcab"
+    },
+    {
+      "community_id": 50,
+      "path": "archives/community_50.tar.zst",
+      "bytes": 13617862551,
+      "sha256": "2d8a4f3f4d70f088334f546c3dd3cbdd28d011cd6d92aaa933b8fac72fa9f000"
+    },
+    {
+      "community_id": 51,
+      "path": "archives/community_51.tar.zst",
+      "bytes": 21751,
+      "sha256": "d0da77126eaa6e48cac987eca59d574cc9212a5ac5bd00d5ca15346cd9db65d2"
+    },
+    {
+      "community_id": 52,
+      "path": "archives/community_52.tar.zst",
+      "bytes": 84441,
+      "sha256": "522fb6a3881d68e12787e7570709376923b234f26758d62337c333dfefbf2def"
+    }
+  ]
+}

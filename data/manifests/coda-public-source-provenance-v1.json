@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-06",
+  "benchmark": {
+    "name": "CoDA-Bench",
+    "upstream_url": "https://huggingface.co/datasets/RUC-DataLab/CoDA-Bench",
+    "revision": "63828a2b652e26a9770555a0cc41e6c8aafdb5d9"
+  },
+  "data_access_policy": "download_only",
+  "source_data_bundled": false,
+  "environments": {
+    "coda-community-43": {
+      "community_id": 43,
+      "archive_sha256": "30771af71c5a37c110b91f5e443e9c2f971ad50e6847bcb8385bee69a2a61aa0",
+      "archive_bytes": 5144617,
+      "asset_manifest": "data/manifests/coda-community-43-csv.sha256",
+      "asset_manifest_sha256": "8cd2786b676548fd74c01c571403aeb4d1ecbe42400ae983cef66e53bc818c9d",
+      "csv_asset_count": 10,
+      "source_count": 9,
+      "sources": {
+        "2017-2018-shsat-admissions-test-offers-by-schools": {
+          "title": "2017–2018 SHSAT Admissions Test Offers by Schools",
+          "provider": "Kaggle",
+          "creator": "infocusp",
+          "source_url": "https://www.kaggle.com/datasets/infocusp/2017-2018-shsat-admissions-test-offers-by-schools",
+          "license_label": "Unknown",
+          "license_status": "unknown",
+          "license_url": null
+        },
+        "data_science_for_good": {
+          "title": "Data Science for Good: PASSNYC",
+          "provider": "Kaggle",
+          "creator": "PASSNYC and collaborators",
+          "source_url": "https://www.kaggle.com/datasets/passnyc/data-science-for-good",
+          "license_label": "CC0-1.0",
+          "license_status": "declared",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        "fastfood-nutrition": {
+          "title": "Fastfood Nutrition",
+          "provider": "Kaggle",
+          "creator": "Ulrik Thyge Pedersen",
+          "source_url": "https://www.kaggle.com/datasets/ulrikthygepedersen/fastfood-nutrition",
+          "license_label": "CC BY 4.0",
+          "license_status": "declared",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "ny-ged-plus-locations": {
+          "title": "NY GED Plus Locations",
+          "provider": "NYC Open Data",
+          "creator": "Department of Education (DOE)",
+          "source_url": "https://data.cityofnewyork.us/d/pd5h-92mc",
+          "license_label": "CC0-1.0 (mirror metadata)",
+          "license_status": "declared",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        "ny_2010_2016_school_safety_report": {
+          "title": "2010–2016 School Safety Report",
+          "provider": "NYC Open Data",
+          "creator": "Department of Education (DOE)",
+          "source_url": "https://data.cityofnewyork.us/d/qybk-bjjc",
+          "license_label": "CC0-1.0 (mirror metadata)",
+          "license_status": "declared",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        "nyc-queens-library-branches": {
+          "title": "Queens Library Branches",
+          "provider": "NYC Open Data",
+          "creator": "Queens Library (QBPL)",
+          "source_url": "https://data.cityofnewyork.us/d/kh3d-xhq7",
+          "license_label": "CC0-1.0 (mirror metadata)",
+          "license_status": "declared",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        "nyc-school-district-breakdowns": {
+          "title": "School District Breakdowns",
+          "provider": "NYC Open Data",
+          "creator": "Department of Youth and Community Development (DYCD)",
+          "source_url": "https://data.cityofnewyork.us/d/g3vh-kbnw",
+          "license_label": "CC0-1.0 (mirror metadata)",
+          "license_status": "declared",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        "nys-nyserda-low-to-moderate-income-census-populat": {
+          "title": "NYSERDA Low- to Moderate-Income Census Population Analysis",
+          "provider": "OPEN-NY",
+          "creator": "New York State Energy Research and Development Authority",
+          "source_url": "https://data.ny.gov/d/bui8-bb6g",
+          "license_label": "CC0-1.0 (mirror metadata)",
+          "license_status": "declared",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        "shakeshack": {
+          "title": "Shake Shack – Nutritional Information",
+          "provider": "Kaggle",
+          "creator": "prasertk",
+          "source_url": "https://www.kaggle.com/datasets/prasertk/shakeshack",
+          "license_label": "CC0-1.0",
+          "license_status": "declared",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      }
+    },
+    "coda-community-52": {
+      "community_id": 52,
+      "archive_sha256": "522fb6a3881d68e12787e7570709376923b234f26758d62337c333dfefbf2def",
+      "archive_bytes": 84441,
+      "asset_manifest": "data/manifests/coda-community-52-csv.sha256",
+      "asset_manifest_sha256": "91961a559167a4cf1f804bbbc2c7557017cfcdccc660530bae5beb6729a52d58",
+      "csv_asset_count": 3,
+      "source_count": 3,
+      "sources": {
+        "health-insurance-coverage-in-the-usa-1979-2019": {
+          "title": "Health Insurance Coverage in the USA (1979–2019)",
+          "provider": "Kaggle",
+          "creator": "asaniczka",
+          "source_url": "https://www.kaggle.com/datasets/asaniczka/health-insurance-coverage-in-the-usa-1979-2019",
+          "license_label": "CC0-1.0",
+          "license_status": "declared",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        "unemployment_rates_by_demographics_1978_2023": {
+          "title": "USA Unemployment Rates by Demographics and Race",
+          "provider": "Kaggle",
+          "creator": "asaniczka",
+          "source_url": "https://www.kaggle.com/datasets/asaniczka/unemployment-rates-by-demographics-1978-2023",
+          "license_label": "CC0-1.0",
+          "license_status": "declared",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        "wages_by_education_in_the_usa_1973_2022": {
+          "title": "Wages by Education in the USA (1973–2022)",
+          "provider": "Kaggle",
+          "creator": "asaniczka",
+          "source_url": "https://www.kaggle.com/datasets/asaniczka/wages-by-education-in-the-usa-1973-2022",
+          "license_label": "CC0-1.0",
+          "license_status": "declared",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      }
+    }
+  }
+}

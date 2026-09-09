@@ -1,0 +1,46 @@
+{
+  "schema_version": "askdu-heldout-plan-v1",
+  "protocol_id": "askdu-coda-heldout-v1",
+  "benchmark": {
+    "name": "CoDA-Bench",
+    "repository": "RUC-DataLab/CoDA-Bench",
+    "revision": "63828a2b652e26a9770555a0cc41e6c8aafdb5d9",
+    "metadata_file": "data/external/coda-bench/coda_bench.json",
+    "metadata_sha256": "4dbec6fa60b9f1653395c63fef1406a786ce0a9434a7d973fb2e3967e95f2559",
+    "archive_file": "data/external/coda-bench/archives/community_45.tar.zst",
+    "archive_bytes": 11166232,
+    "archive_sha256": "756b7c3cdd7ca207186d98cc8bbba6e86913f1a360893611c2052ba892768280"
+  },
+  "selection": {
+    "community_id": 45,
+    "task_ids": [31, 32, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270],
+    "task_count": 13,
+    "selection_rule": "all tasks assigned to community_45 at the pinned revision"
+  },
+  "paths": {
+    "questions_file": "data/pilots/heldout-v1-questions.json",
+    "extracted_root": "data/external/coda-bench/communities/community_45",
+    "data_root": "data/external/coda-bench/communities/community_45/full_community",
+    "extracted_manifest": "data/manifests/coda-community-45-extracted.sha256",
+    "run_directory": "experiments/results/coda-community45-heldout-v1",
+    "first_pass_marker": "experiments/results/coda-community45-heldout-v1/FIRST_PASS_STARTED.json",
+    "first_pass_summary": "experiments/results/coda-community45-heldout-v1/sealed-summary-without-oracle.json",
+    "first_pass_seal": "experiments/results/coda-community45-heldout-v1/seal.sha256",
+    "oracle_marker": "experiments/results/coda-community45-heldout-v1/ORACLE_SCORING_STARTED.json",
+    "score_artifact": "experiments/results/coda-community45-heldout-v1/scored-after-oracle-unsealing.json"
+  },
+  "execution": {
+    "model": "gpt-5.5-2026-04-24",
+    "endpoint_sha256": "614ca6b74ed7312002b4bdd99675e4e6fb525e7b86d87793b51b4ffef1e80048",
+    "api_style": "direct_chat_completions",
+    "auth_scheme": "api_key",
+    "token_field": "max_completion_tokens",
+    "trust_environment_proxy": false,
+    "timeout_seconds": 120.0,
+    "transport_retries": 2,
+    "temperature": 0.0,
+    "planner_max_attempts": 2,
+    "max_repair_rounds": 2,
+    "max_concurrent_runs": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "askdu-user-trial-v3",
+  "is_example": true,
+  "session_id": "EXAMPLE-NOT-A-REAL-SESSION",
+  "occurred_at": "2000-01-01T00:00:00+00:00",
+  "build_version": "0.0.0-example",
+  "trial_protocol_id": "askdu-non-author-rehearsal-v1",
+  "trial_protocol_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "demo_surface_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "deployment": "local-compose",
+  "browser": "Chromium EXAMPLE",
+  "viewport_css_px": {
+    "width": 1600,
+    "height": 900
+  },
+  "zoom_percent": 100,
+  "consent_recorded": false,
+  "participant": {
+    "code": "P00-EXAMPLE",
+    "non_author": true,
+    "prior_project_exposure": false,
+    "data_analysis_familiarity_1_to_5": 3
+  },
+  "task_results": {
+    "identify_question_only_input": false,
+    "launch_verified_question": false,
+    "explain_insufficient_initial_source": false,
+    "locate_backward_repair_edge": false,
+    "trace_report_claim_to_evidence": false,
+    "explain_honest_data_gap": false
+  },
+  "outcomes": {
+    "tasks_total": 6,
+    "completed_without_facilitator_correction": 0,
+    "repeat_core_path_without_facilitator_correction": false,
+    "correctly_distinguished_report_and_diagnosis": false,
+    "blocking_issues_remaining": 0
+  },
+  "timings_seconds": {
+    "time_to_first_run": null,
+    "time_to_locate_repair_edge": null,
+    "time_to_locate_claim_evidence": null
+  },
+  "issues": []
+}

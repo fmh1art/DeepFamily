@@ -1,0 +1,128 @@
+{
+  "protocol_id": "askdu-coda-heldout-v1",
+  "protocol_version": 2,
+  "status": "implementation_frozen_blinded",
+  "selected_at": "2026-09-06T08:28:44+08:00",
+  "frozen_plan": {
+    "file": "data/pilots/heldout-v1-plan.json",
+    "sha256": "435c27971027c0f8ef3bbfe3c48713cc3afd80993e8bdc6ca050314e16768416"
+  },
+  "benchmark": {
+    "name": "CoDA-Bench",
+    "repository": "RUC-DataLab/CoDA-Bench",
+    "revision": "63828a2b652e26a9770555a0cc41e6c8aafdb5d9",
+    "metadata_file": "data/external/coda-bench/coda_bench.json",
+    "metadata_sha256": "4dbec6fa60b9f1653395c63fef1406a786ce0a9434a7d973fb2e3967e95f2559",
+    "archive_file": "data/external/coda-bench/archives/community_45.tar.zst",
+    "archive_bytes": 11166232,
+    "archive_sha256": "756b7c3cdd7ca207186d98cc8bbba6e86913f1a360893611c2052ba892768280",
+    "archive_state": "downloaded_opaque_not_listed_or_extracted"
+  },
+  "selection": {
+    "community_id": 45,
+    "task_ids": [31, 32, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270],
+    "task_count": 13,
+    "selection_rule": "all tasks assigned to community_45 at the pinned revision",
+    "rationale": [
+      "Use a complete community instead of cherry-picking questions.",
+      "Use a domain not covered by the registered community_43 and community_52 operators.",
+      "Keep the archive small enough for repeatable local and CI evaluation."
+    ],
+    "metadata_known_at_selection": [
+      "community identifier",
+      "task identifiers and count",
+      "dataset labels indicating an IPL match-data domain",
+      "approximate compressed archive size"
+    ]
+  },
+  "blinding": {
+    "attestation": "No community_45 question text, answer guideline, oracle, reference program, archive member list, schema, or data row was inspected before this selection was frozen.",
+    "prohibited_until_implementation_freeze": [
+      "question text",
+      "answer guideline or oracle",
+      "reference program",
+      "archive member names and contents",
+      "table schemas and data rows"
+    ],
+    "permitted_before_implementation_freeze": [
+      "download the opaque archive",
+      "verify its byte size and SHA-256 digest",
+      "develop against non-held-out examples and synthetic fixtures"
+    ]
+  },
+  "implementation_freeze": {
+    "surface": [
+      "backend/src",
+      "backend/pyproject.toml",
+      "backend/uv.lock",
+      "data/pilots/heldout-v1-plan.json",
+      "experiments",
+      "scripts/hash_evaluation_surface.sh",
+      "scripts/unblind_coda_heldout.py"
+    ],
+    "selection_time_sha256": null,
+    "pre_unblinding_sha256": "7b196aae34d11f6a8c3c9a4c95a6d96f4a17a8d09a4285197ec72a5a56b74edc",
+    "frozen_at": "2026-09-09T01:59:02+08:00",
+    "history": [
+      {
+        "sha256": "54d4fa98944d91806f5e9eec59761c43f21cfb382c8fa2f37b5be5005a18a181",
+        "frozen_at": "2026-09-06T09:14:14+08:00",
+        "reopened_at": "2026-09-06T09:34:01+08:00",
+        "reason": "Pre-unblinding deployment hardening: readiness, host validation, concurrency admission, and public error redaction."
+      },
+      {
+        "sha256": "1b4d493d61e6093ee418c02773c964551bbfc65d6cf2d5d2834ab2600a2ec591",
+        "frozen_at": "2026-09-06T09:46:46+08:00",
+        "reopened_at": "2026-09-06T11:18:57+08:00",
+        "reason": "Pre-unblinding provider transport hardening: exact queried endpoints, authentication and token-field compatibility, bounded retries, proxy isolation, and a public-fixture smoke guard."
+      },
+      {
+        "sha256": "ecd0c3395e8851a23754ea083842850c32737f977061480cdf867a9f3dfc2e53",
+        "frozen_at": "2026-09-06T11:18:57+08:00",
+        "reopened_at": "2026-09-06T12:16:53+08:00",
+        "reason": "Pre-unblinding provenance hardening: audited source registry, per-CSV integrity verification, report/UI disclosures, and registered-catalog admission checks."
+      },
+      {
+        "sha256": "db9de4d4c417275090740b690cb7fa6805e3b4bced095d1c715bd1b1f392da8a",
+        "frozen_at": "2026-09-06T12:16:53+08:00",
+        "reopened_at": "2026-09-06T12:21:55+08:00",
+        "reason": "Pre-unblinding manifest-invariant completion: require exact coverage between registered CSV datasets and audited source metadata."
+      },
+      {
+        "sha256": "df805453df07fed4553b0cc49b505843365beb417bd04fffd3b01416791a907c",
+        "frozen_at": "2026-09-06T12:21:55+08:00",
+        "reopened_at": "2026-09-06T13:55:24+08:00",
+        "reason": "Pre-unblinding controlled mechanism ablation: add a same-budget static-retry controller to isolate violation-conditioned repair guidance; the production default remains violation-conditioned, and no held-out payload was inspected."
+      },
+      {
+        "sha256": "642040c49f7dd8d74822e8adc19983d2db9e87e898cbec78ae9ebb953e732146",
+        "frozen_at": "2026-09-06T13:55:24+08:00",
+        "reopened_at": "2026-09-06T15:44:16+08:00",
+        "reason": "Pre-unblinding evidence-chain hardening: freeze the static task/path/model plan and the redaction guard; verify the exact extracted-data census before model construction; atomically transition sealed/scored states; and exercise tamper, partial-run, recovery, and duplicate-scoring paths on synthetic fixtures. No held-out payload was inspected."
+      },
+      {
+        "sha256": "6baa554fa5a4a08ef2e1c1a2048248624e4cc5071f5110209652075862b95092",
+        "frozen_at": "2026-09-06T15:44:16+08:00",
+        "reopened_at": "2026-09-08T15:17:34+08:00",
+        "reason": "Pre-unblinding paper-aligned observability: add asynchronously persisted Discovery hops, DeepPrep operator candidate traces, and safe compiled DeepAnalyze-style analysis notebook cells with focused and full regression tests. No community_45 payload was inspected."
+      },
+      {
+        "sha256": "b0e77e7925a3c20ee3496a53c87c942a6928a1ed9409d18f15329e02d266767a",
+        "frozen_at": "2026-09-08T15:17:34+08:00",
+        "reopened_at": "2026-09-09T01:59:02+08:00",
+        "reason": "Pre-unblinding stage input/output schemas and bounded prepared-table previews; same-provider structured report synthesis, artifact-reference validation, and the development-smoke evidence-packet correction. The 158-test backend suite passed; no held-out extraction, question, or run artifact exists, and no community_45 payload was inspected. The existing model-mode evaluation plan is unchanged; this is not a freeze of a new agentic evaluation protocol."
+      }
+    ]
+  },
+  "unblinding": {
+    "status": "not_started",
+    "started_at": null
+  },
+  "results": {
+    "status": "not_run",
+    "planned_run_directory": "experiments/results/coda-community45-heldout-v1",
+    "planned_oracle_marker": "experiments/results/coda-community45-heldout-v1/ORACLE_SCORING_STARTED.json",
+    "planned_score_artifact": "experiments/results/coda-community45-heldout-v1/scored-after-oracle-unsealing.json",
+    "artifact": null
+  }
+}

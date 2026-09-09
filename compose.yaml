@@ -1,0 +1,83 @@
+name: ask-dont-upload
+
+x-logging: &default-logging
+  driver: json-file
+  options:
+    max-size: ${ASKDU_LOG_MAX_SIZE:-10m}
+    max-file: ${ASKDU_LOG_MAX_FILES:-5}
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      ASKDU_ENVIRONMENT_ID: coda-community-43
+      ASKDU_CATALOG_MODE: ${ASKDU_CATALOG_MODE:-single}
+      ASKDU_DATA_ROOT: /data/environment
+      ASKDU_PROVENANCE_MANIFEST: /app/data/manifests/coda-public-source-provenance-v1.json
+      ASKDU_CODA_RELEASE_MANIFEST: /app/data/manifests/coda-bench-v1-open-release.json
+      ASKDU_CODA_RELEASE_ROOT: /data/coda-bench
+      ASKDU_RUNTIME_ROOT: /runtime
+      ASKDU_MAX_REPAIR_ROUNDS: "3"
+      ASKDU_MAX_CONCURRENT_RUNS: ${ASKDU_MAX_CONCURRENT_RUNS:-2}
+      ASKDU_RUN_RETENTION_HOURS: ${ASKDU_RUN_RETENTION_HOURS:-0}
+      ASKDU_CORS_ORIGINS: ${ASKDU_CORS_ORIGINS:-http://localhost:${ASKDU_HTTP_PORT:-8080}}
+      ASKDU_TRUSTED_HOSTS: ${ASKDU_TRUSTED_HOSTS:-localhost,127.0.0.1,api}
+      ASKDU_PLANNER_MODE: ${ASKDU_PLANNER_MODE:-registry}
+      ASKDU_PLANNER_MAX_ATTEMPTS: ${ASKDU_PLANNER_MAX_ATTEMPTS:-2}
+      ASKDU_DISCOVERY_MAX_TURNS: ${ASKDU_DISCOVERY_MAX_TURNS:-16}
+      ASKDU_PREPARATION_MAX_TURNS: ${ASKDU_PREPARATION_MAX_TURNS:-6}
+      ASKDU_LLM_BASE_URL: ${ASKDU_LLM_BASE_URL:-https://aidp.bytedance.net/api/modelhub/online/v2/crawl?api-version=2024-03-01-preview}
+      ASKDU_LLM_MODEL: ${ASKDU_LLM_MODEL:-gpt-5.5-2026-04-24}
+      ASKDU_LLM_API_KEY: ${ASKDU_LLM_API_KEY:-}
+      ASKDU_LLM_API_STYLE: ${ASKDU_LLM_API_STYLE:-azure_chat}
+      ASKDU_LLM_AUTH_SCHEME: ${ASKDU_LLM_AUTH_SCHEME:-api_key}
+      ASKDU_LLM_TOKEN_FIELD: ${ASKDU_LLM_TOKEN_FIELD:-max_completion_tokens}
+      ASKDU_LLM_TRUST_ENV_PROXY: ${ASKDU_LLM_TRUST_ENV_PROXY:-false}
+      ASKDU_LLM_TIMEOUT_SECONDS: ${ASKDU_LLM_TIMEOUT_SECONDS:-120}
+      ASKDU_LLM_MAX_RETRIES: ${ASKDU_LLM_MAX_RETRIES:-2}
+    volumes:
+      - ./data/external/coda-bench/communities/community_43/full_community:/data/environment:ro
+      - ./data/external/coda-bench:/data/coda-bench:ro
+      - askdu-runtime:/runtime
+    read_only: true
+    tmpfs:
+      - /tmp:size=128m,mode=1777
+    cap_drop:
+      - ALL
+    pids_limit: 256
+    security_opt:
+      - no-new-privileges:true
+    init: true
+    stop_grace_period: 20s
+    logging: *default-logging
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "${ASKDU_BIND_ADDRESS:-127.0.0.1}:${ASKDU_HTTP_PORT:-8080}:8080"
+    read_only: true
+    tmpfs:
+      - /tmp:size=32m,mode=1777
+      - /var/cache/nginx:size=32m,mode=0755
+      - /var/run:size=4m,mode=0755
+    cap_drop:
+      - ALL
+    pids_limit: 128
+    security_opt:
+      - no-new-privileges:true
+    init: true
+    stop_grace_period: 10s
+    logging: *default-logging
+    restart: unless-stopped
+
+volumes:
+  askdu-runtime:
+    name: ${ASKDU_RUNTIME_VOLUME_NAME:-ask-dont-upload_askdu-runtime}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "askdu-development-smoke-observation-v1",
+  "observed_at": "2026-09-09T02:54:08+08:00",
+  "scope": "Developer-selected post-fix demonstration; not held out, not a success-rate estimate.",
+  "question": "最适合移民的国家是哪一个",
+  "extra_task_inputs": [],
+  "planner_mode": "agentic",
+  "model_profile": "pinned project ModelHub profile; gpt-5.5-2026-04-24",
+  "runs": [
+    {
+      "path": "runtime/stage-io-report-smoke-20260909.json",
+      "sha256": "253e051afae866a67657e0773c4d18e7fc26bf3680926dbec323075e26ad1bb1",
+      "outcome": "Stopped after cross-community selection was rejected on the final discovery turn.",
+      "historical_diagnosis_warning": "The persisted data_gap was incorrect for turn exhaustion; the subsequent classification fix does not rewrite this record."
+    },
+    {
+      "path": "runtime/stage-io-report-smoke-budgeted-20260909.json",
+      "sha256": "ec17836ee45abfac4e17cf7ef6a6b49e17ac8a3e9c21daeacb19e55142f1af6c",
+      "outcome": "Report generated after four schema-invalid preparation proposals; this is not evidence of executed non-local backtracking."
+    },
+    {
+      "path": "runtime/stage-io-report-smoke-schema-20260909.json",
+      "sha256": "a48471eb8791c103a81d1529e90d92063dd0f4fd3b08f07b5e218e493a50ba02",
+      "run_id": "run_e2f9348452df475c",
+      "status": "completed",
+      "created_at": "2026-09-08T18:43:36.171985Z",
+      "completed_at": "2026-09-08T18:45:31.636589Z",
+      "discovery_records_including_root": 12,
+      "selected_source": {
+        "relative_path": "community_28/countries-dataset-2020/source/Quality of life index by countries 2020.csv",
+        "sha256": "25d69f3352794ef41a60940e545edde3fa5a962436ac96e8d45b095d71518da7"
+      },
+      "preparation_candidates": 1,
+      "preparation_schema_rejections": 0,
+      "prepared_rows": 80,
+      "prepared_columns": 10,
+      "operator_path": ["CastType", "DropNulls", "Sort", "Terminate"],
+      "analysis_artifacts": 10,
+      "notebook_code_cells": 10,
+      "notebook_execute_cells": 10,
+      "notebook_debug_cells": 0,
+      "report_sections": 5,
+      "report_writer_accepted": true,
+      "report_path": "runtime/stage-io-report-smoke-schema-20260909/runs/run_e2f9348452df475c/reports/report.md",
+      "report_sha256": "df18f6c7ac356908b780b89ff784aeb6607766bbd5f0e5970583c16e3e18df56"
+    }
+  ],
+  "limitations": [
+    "Full logs remain local and are not redistributed in this observation record.",
+    "No implementation digest was recorded at the start of these runs; later source edits must not be described as their original freeze.",
+    "A completed report with valid artifact references is not a semantic correctness certificate.",
+    "The report concerns dated dataset metrics, not current immigration policy or personal eligibility."
+  ]
+}

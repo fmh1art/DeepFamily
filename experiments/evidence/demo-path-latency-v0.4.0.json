@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "recorded_at_utc": "2026-09-06T04:59:49+00:00",
+  "scope": "steady-state serial production-HTTP demo-path responsiveness",
+  "service": {
+    "version": "0.4.0",
+    "environment_id": "coda-community-43",
+    "planner_mode": "registry",
+    "csv_assets": 10
+  },
+  "protocol": {
+    "base_url": "http://127.0.0.1:8080",
+    "route": "Nginx -> FastAPI POST /api/v1/runs",
+    "warmups_per_scenario": 1,
+    "repetitions_per_scenario": 10,
+    "request_order": "four scenarios in task-id order, repeated serially",
+    "interval_seconds": 2.05,
+    "percentile_definition": "nearest-rank P95",
+    "proxy_environment_inherited": false
+  },
+  "machine": {
+    "platform": "Linux-5.4.143.bsk.8-amd64-x86_64-with-glibc2.28",
+    "architecture": "x86_64",
+    "logical_cpus": 64,
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8457C",
+    "python": "3.10.20"
+  },
+  "overall_latency_ms": {
+    "count": 40,
+    "min": 7.285,
+    "median": 21.475,
+    "p95": 57.882,
+    "max": 58.374
+  },
+  "scenarios": [
+    {
+      "task_id": 959,
+      "label": "Join repair",
+      "terminal_status": "completed",
+      "diagnosis_kind": null,
+      "observed_repair_edges": [
+        1
+      ],
+      "latency_ms": {
+        "count": 10,
+        "min": 54.854,
+        "median": 56.143,
+        "p95": 58.374,
+        "max": 58.374
+      },
+      "samples_ms": [
+        56.788,
+        54.854,
+        57.882,
+        55.48,
+        58.041,
+        55.532,
+        58.374,
+        55.527,
+        56.754,
+        54.884
+      ]
+    },
+    {
+      "task_id": 960,
+      "label": "Coverage repair",
+      "terminal_status": "completed",
+      "diagnosis_kind": null,
+      "observed_repair_edges": [
+        1
+      ],
+      "latency_ms": {
+        "count": 10,
+        "min": 29.267,
+        "median": 30.759,
+        "p95": 31.799,
+        "max": 31.799
+      },
+      "samples_ms": [
+        29.627,
+        30.764,
+        29.267,
+        30.903,
+        31.109,
+        31.799,
+        30.755,
+        30.747,
+        29.462,
+        31.245
+      ]
+    },
+    {
+      "task_id": 176,
+      "label": "Direct answer",
+      "terminal_status": "completed",
+      "diagnosis_kind": null,
+      "observed_repair_edges": [
+        0
+      ],
+      "latency_ms": {
+        "count": 10,
+        "min": 12.494,
+        "median": 13.286,
+        "p95": 13.683,
+        "max": 13.683
+      },
+      "samples_ms": [
+        13.582,
+        12.494,
+        13.447,
+        13.314,
+        13.258,
+        13.358,
+        12.897,
+        13.683,
+        13.137,
+        12.907
+      ]
+    },
+    {
+      "task_id": 179,
+      "label": "Honest data gap",
+      "terminal_status": "insufficient",
+      "diagnosis_kind": "data_gap",
+      "observed_repair_edges": [
+        0
+      ],
+      "latency_ms": {
+        "count": 10,
+        "min": 7.285,
+        "median": 7.678,
+        "p95": 8.442,
+        "max": 8.442
+      },
+      "samples_ms": [
+        7.67,
+        7.624,
+        7.534,
+        7.285,
+        7.686,
+        7.937,
+        8.442,
+        7.692,
+        8.369,
+        7.295
+      ]
+    }
+  ],
+  "limitations": [
+    "This is descriptive rehearsal evidence on one host, not a cross-system benchmark.",
+    "It excludes image build, container startup, TLS, WAN, browser rendering, and model calls.",
+    "Warm-ups remove first-request effects; host filesystem and OS page caches are not flushed.",
+    "Requests are serial and paced to respect the deployed per-IP run limit."
+  ]
+}

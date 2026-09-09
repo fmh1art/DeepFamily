@@ -1,0 +1,82 @@
+/* Print-only arrangement of existing DOM. Not a replacement production UI. */
+.capturing-agentic-replay body > :not(#agentic-replay-plate) { display: none !important; }
+.capturing-agentic-replay body { min-width: 0; background: white; }
+.capturing-agentic-replay body::before { display: none; }
+#agentic-replay-plate {
+  width: 1000px; padding: 10px; color: #172033; background: #fff;
+  font: 16px/1.35 Arial, "Noto Sans CJK SC", sans-serif;
+}
+#agentic-replay-plate * { box-shadow: none !important; }
+#agentic-replay-plate header {
+  display: flex; flex-direction: column; gap: 3px; padding: 0 0 7px;
+  border-bottom: 2px solid #394b5e;
+}
+#agentic-replay-plate header strong { font-size: 19px; }
+#agentic-replay-plate .replay-panels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 8px; }
+#agentic-replay-plate .replay-panel { min-width: 0; border: 1px solid #c1cad4; padding: 8px; border-radius: 7px; }
+#agentic-replay-plate h2 { margin: 0 0 6px; font-size: 20px; }
+#agentic-replay-plate h3 { margin: 8px 0 5px; font-size: 16px; }
+#agentic-replay-plate p { margin: 4px 0; font-size: 15px; }
+#agentic-replay-plate footer { margin-top: 8px; padding: 6px 0 0; border-top: 1px solid #7c8998; font: 14px/1.35 Arial, sans-serif; }
+#agentic-replay-plate .discovery-network { min-height: 0; border: 0; background: #fff; overflow: visible; }
+#agentic-replay-plate .discovery-network-heading { padding: 0; }
+#agentic-replay-plate .discovery-network-heading > div,
+#agentic-replay-plate .network-scope-note { display: none; }
+#agentic-replay-plate .discovery-network-heading small { font-size: 15px; }
+#agentic-replay-plate .discovery-network svg { min-height: 0; width: 100%; height: auto; }
+#agentic-replay-plate .network-nodes text { font-size: 25px; font-family: Arial, sans-serif; }
+#agentic-replay-plate .network-nodes .file text,
+#agentic-replay-plate .network-nodes .directory text,
+#agentic-replay-plate .network-nodes .community text { display: none; }
+#agentic-replay-plate .network-nodes .root text { font-size: 32px; }
+#agentic-replay-plate .discovery-network-legend { gap: 8px; padding: 6px 0; font-size: 15px; }
+#agentic-replay-plate .discovery-network-legend span { font-size: 15px; }
+#agentic-replay-plate .discovery-output-files > div { display: flex; flex-direction: column; padding: 8px; gap: 6px; }
+#agentic-replay-plate .discovery-output-files strong { white-space: normal; font-size: 16px; overflow-wrap: anywhere; }
+#agentic-replay-plate .discovery-output-files small { font-size: 15px; }
+#agentic-replay-plate .discovery-output-files code { display: none; }
+#agentic-replay-plate .prep-tree-board { min-height: 0; border: none; background: #fff; }
+#agentic-replay-plate .prep-tree-board-heading { display: none; }
+#agentic-replay-plate .prep-tree-scroll { min-height: 0; max-height: none; overflow: visible; padding: 0; }
+#agentic-replay-plate .prep-operator-tree ul { padding-left: 12px; margin: 0 0 0 12px; }
+#agentic-replay-plate .prep-operator-tree,
+#agentic-replay-plate .prep-operator-tree ul { min-width: 0; }
+#agentic-replay-plate .prep-operator-tree li { margin: 3px 0; }
+#agentic-replay-plate .prep-operator-tree ul > li::before { left: -12px; width: 12px; top: 17px; }
+#agentic-replay-plate .prep-operator-tree ul > li:last-child::after { left: -13px; top: 18px; }
+#agentic-replay-plate .prep-source-node,
+#agentic-replay-plate .prep-tree-node { min-width: 0; width: 100%; padding: 4px; gap: 4px; border-color: #7c8998; line-height: 1.2; }
+#agentic-replay-plate .prep-source-node > span { grid-row: auto; padding: 2px 4px; }
+#agentic-replay-plate .prep-source-node small,
+#agentic-replay-plate .prep-tree-node small,
+#agentic-replay-plate .prep-tree-node > span:last-child { display: none; }
+#agentic-replay-plate .prep-source-node > span,
+#agentic-replay-plate .prep-source-node strong,
+#agentic-replay-plate .prep-tree-node strong { font-size: 15px; }
+#agentic-replay-plate .stage-schema-list { gap: 4px; }
+#agentic-replay-plate .stage-schema-list strong,
+#agentic-replay-plate .stage-schema-list small { font-size: 15px; }
+#agentic-replay-plate .prepared-table-preview > .stage-schema-list { display: none; }
+#agentic-replay-plate .prepared-table-shape { padding: 8px 0 4px; }
+#agentic-replay-plate .prepared-table-shape strong,
+#agentic-replay-plate .prepared-table-shape span { font-size: 16px; }
+#agentic-replay-plate .prepared-preview-table { padding-top: 4px; margin-top: 4px; }
+#agentic-replay-plate .prepared-preview-table > span { font-size: 15px; }
+#agentic-replay-plate .prepared-preview-table th:nth-child(n+3),
+#agentic-replay-plate .prepared-preview-table td:nth-child(n+3),
+#agentic-replay-plate .prepared-preview-table tbody tr:nth-child(n+4) { display: none; }
+#agentic-replay-plate .prepared-preview-table table { width: 100%; min-width: 0; table-layout: fixed; }
+#agentic-replay-plate .prepared-preview-table th,
+#agentic-replay-plate .prepared-preview-table td { padding: 4px; font-size: 14px; white-space: normal; overflow-wrap: normal; }
+#agentic-replay-plate .notebook-code-wrap > div { display: none; }
+#agentic-replay-plate .notebook-code-wrap { margin-top: 0; }
+#agentic-replay-plate .source-cell { white-space: pre-wrap; overflow-wrap: anywhere; padding: 6px; max-height: none; font: 13px/1.25 Consolas, monospace; }
+#agentic-replay-plate #report-title { margin: 12px 0 8px; font-size: 18px; }
+#agentic-replay-plate .report-scope-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 0; }
+#agentic-replay-plate .report-scope-strip > div { padding: 6px; }
+#agentic-replay-plate .report-scope-strip strong { font-size: 17px; }
+#agentic-replay-plate .report-scope-strip span { font-size: 14px; }
+#agentic-replay-plate .analysis-report-dimensions { display: flex; flex-direction: column; gap: 4px; }
+#agentic-replay-plate .analysis-report-dimensions span { font: 15px/1.35 Arial, "Noto Sans CJK SC", sans-serif; border: 1px solid #c1cad4; border-radius: 4px; padding: 4px; }
+#agentic-replay-plate .excerpt-note { margin-top: 10px; font-size: 14px; }
+@media print { html, body { margin: 0 !important; padding: 0 !important; } }

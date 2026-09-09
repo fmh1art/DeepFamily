@@ -1,0 +1,49 @@
+services:
+  api:
+    environment:
+      ASKDU_RUNTIME_ROOT: /tmp/model-smoke-runtime
+      ASKDU_PLANNER_MODE: model
+      ASKDU_PLANNER_MAX_ATTEMPTS: "2"
+      ASKDU_LLM_BASE_URL: "http://127.0.0.1:9000/v1/chat/completions?api-version=smoke"
+      ASKDU_LLM_MODEL: askdu-model-smoke
+      ASKDU_LLM_API_KEY: smoke-key # Fixed non-secret test sentinel.
+      ASKDU_LLM_API_STYLE: direct_chat_completions
+      ASKDU_LLM_AUTH_SCHEME: api_key
+      ASKDU_LLM_TOKEN_FIELD: max_completion_tokens
+      ASKDU_LLM_TRUST_ENV_PROXY: "false"
+      ASKDU_LLM_TIMEOUT_SECONDS: "5"
+      ASKDU_LLM_MAX_RETRIES: "0"
+      ASKDU_LLM_ALLOW_TEST_PROVIDER: "true"
+
+  model-provider:
+    image: ask-dont-upload-api:latest
+    entrypoint: ["python", "/opt/askdu-smoke/mock_chat_provider.py"]
+    network_mode: service:api
+    depends_on:
+      api:
+        condition: service_started
+    environment:
+      PYTHONDONTWRITEBYTECODE: "1"
+    volumes:
+      - ./scripts/mock_chat_provider.py:/opt/askdu-smoke/mock_chat_provider.py:ro
+    read_only: true
+    tmpfs:
+      - /tmp:size=32m,mode=1777
+    cap_drop:
+      - ALL
+    pids_limit: 64
+    security_opt:
+      - no-new-privileges:true
+    init: true
+    healthcheck:
+      interval: 2s
+      timeout: 2s
+      retries: 10
+      start_period: 2s
+      test:
+        - CMD
+        - python
+        - -c
+        - >-
+          import urllib.request;
+          urllib.request.urlopen('http://127.0.0.1:9000/readyz', timeout=1)

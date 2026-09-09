@@ -1,0 +1,89 @@
+{
+  "schema_version": "askdu-agentic-replay-capture-v1",
+  "capture_kind": "historical_model_run_in_current_ui",
+  "source_script": "frontend/e2e/capture-agentic-replay.mjs",
+  "source_sha256": "b46359dd5ae3da74076f86ad710e2751aea2a9e75b9b8dc1ae8d6d4f1b043431",
+  "style_path": "frontend/e2e/agentic-replay-plate.css",
+  "style_sha256": "1e85932d6178f823ebf327ab7563f215339ff818161cde49b59f9002bad35726",
+  "evidence_path": "experiments/evidence/agentic-question-only-smoke-2026-09-09.json",
+  "evidence_sha256": "66293b591d8816525af04edb92354a7a66cebd273b89679a77c0dad09368cc8b",
+  "original_run": {
+    "path": "runtime/stage-io-report-smoke-schema-20260909.json",
+    "sha256": "a48471eb8791c103a81d1529e90d92063dd0f4fd3b08f07b5e218e493a50ba02",
+    "run_id": "run_e2f9348452df475c"
+  },
+  "original_report_sha256": "df18f6c7ac356908b780b89ff784aeb6607766bbd5f0e5970583c16e3e18df56",
+  "excerpt": {
+    "graph_hop": 5,
+    "selected_source_hop": 12,
+    "preview_rows": 3,
+    "preview_columns": 2
+  },
+  "demo_surface_sha256": "bb4ecd9d0cc18abd8975385beb489f86ffe806cbbab66e88505d9e2b4bf0a36e",
+  "capture_notes": [
+    "Actual DOM excerpts rearranged and typeset for print; current full UI captures are provided separately.",
+    "Graph is recorded hop 5; selected file is recorded hop 12. Other panels show terminal outputs.",
+    "Prepared preview shows only the first three rows and first two columns in the overview, with an explicit excerpt label.",
+    "Model prose remains in its original language. A completed report is not a factuality certificate."
+  ],
+  "visible_panels": [
+    "a",
+    "b",
+    "c"
+  ],
+  "css_width": 1000,
+  "css_height": 625.265625,
+  "device_scale_factor": 3,
+  "model_calls_during_capture": 0,
+  "replayed_post_requests": 1,
+  "browser_errors": [],
+  "outputs": {
+    "paper/figures/agentic-replay-v1/discovery.png": {
+      "sha256": "e33bd61e4a732122b019013d6142c1c39acf6aee7ee23bfdba919e522925f8f7",
+      "bytes": 1762096,
+      "format": "png",
+      "pixel_width": 3540,
+      "pixel_height": 3150
+    },
+    "paper/figures/agentic-replay-v1/preparation.png": {
+      "sha256": "2d195d7aedb1d76829af8807a28e708274908e8d1d36b58c223d0e367e522ec9",
+      "bytes": 1974680,
+      "format": "png",
+      "pixel_width": 3540,
+      "pixel_height": 4803
+    },
+    "paper/figures/agentic-replay-v1/analysis.png": {
+      "sha256": "7dd00458b3484fa4d6cd175c22e6e9b2abcb5d9ebc901b988a210478f174b650",
+      "bytes": 1611159,
+      "format": "png",
+      "pixel_width": 3390,
+      "pixel_height": 2043
+    },
+    "paper/figures/agentic-replay-v1/report.png": {
+      "sha256": "99db0473e02b9916454f41e2946d1084d2818d3d7a5e8635eb09b2af283ee22b",
+      "bytes": 1795832,
+      "format": "png",
+      "pixel_width": 3390,
+      "pixel_height": 5052
+    },
+    "paper/figures/agentic-replay-v1/overview.png": {
+      "sha256": "9804e3c374db84516a9dc3741e61093abddc3eb0879de297f654d6476b10bb5c",
+      "bytes": 706573,
+      "format": "png",
+      "pixel_width": 3000,
+      "pixel_height": 1878
+    },
+    "paper/figures/agentic-replay-v1/overview.pdf": {
+      "sha256": "aceffa80f9e37760cddb65f632043ddbb6a1dba0e7a48c582065e3fe040cc8ae",
+      "bytes": 279605,
+      "format": "browser-vector-pdf"
+    },
+    "paper/figures/agentic-replay-v1/overview-gray.png": {
+      "sha256": "30adba1275779535198284dff1ce95a2e15ebb45b377ba30e1cd12a765ddc0ce",
+      "bytes": 568329,
+      "format": "png",
+      "pixel_width": 3000,
+      "pixel_height": 1878
+    }
+  }
+}

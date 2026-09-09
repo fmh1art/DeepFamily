@@ -1,0 +1,1359 @@
+{
+  "backend_application": {
+    "first_party_packages": [
+      {
+        "license": "Proprietary research prototype",
+        "license_classifiers": [],
+        "license_files": [],
+        "license_source": "License",
+        "name": "ask-dont-upload",
+        "version": "0.4.0"
+      }
+    ],
+    "manual_review": [
+      {
+        "name": "certifi",
+        "reasons": [
+          "reciprocal-license identifier"
+        ]
+      },
+      {
+        "name": "ijson",
+        "reasons": [
+          "compound or non-standard license metadata"
+        ]
+      },
+      {
+        "name": "numpy",
+        "reasons": [
+          "compound or non-standard license metadata"
+        ]
+      },
+      {
+        "name": "python-dateutil",
+        "reasons": [
+          "compound or non-standard license metadata",
+          "multiple OSI license classifiers"
+        ]
+      },
+      {
+        "name": "sniffio",
+        "reasons": [
+          "compound or non-standard license metadata",
+          "multiple OSI license classifiers"
+        ]
+      },
+      {
+        "name": "tqdm",
+        "reasons": [
+          "reciprocal-license identifier",
+          "compound or non-standard license metadata"
+        ]
+      },
+      {
+        "name": "uvloop",
+        "reasons": [
+          "multiple OSI license classifiers"
+        ]
+      }
+    ],
+    "python_version": "3.12.14",
+    "third_party_package_count": 45,
+    "third_party_packages": [
+      {
+        "license": "MIT",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "annotated-doc",
+        "version": "0.0.5"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "annotated-types",
+        "version": "0.8.0"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "anyio",
+        "version": "4.15.1"
+      },
+      {
+        "license": "MPL-2.0",
+        "license_classifiers": [
+          "Mozilla Public License 2.0 (MPL 2.0)"
+        ],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License",
+        "name": "certifi",
+        "version": "2026.7.22"
+      },
+      {
+        "license": "BSD-3-Clause",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE.txt"
+        ],
+        "license_source": "License-Expression",
+        "name": "click",
+        "version": "8.5.0"
+      },
+      {
+        "license": "Apache License, Version 2.0",
+        "license_classifiers": [
+          "Apache Software License"
+        ],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License",
+        "name": "distro",
+        "version": "1.9.0"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [
+          "AUTHORS.txt",
+          "LICENCE.python",
+          "LICENCE.rst"
+        ],
+        "license_source": "License",
+        "name": "et_xmlfile",
+        "version": "2.0.0"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "fastapi",
+        "version": "0.141.1"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENSE.txt"
+        ],
+        "license_source": "License",
+        "name": "h11",
+        "version": "0.16.0"
+      },
+      {
+        "license": "BSD-3-Clause",
+        "license_classifiers": [
+          "BSD License"
+        ],
+        "license_files": [
+          "LICENSE.md"
+        ],
+        "license_source": "License-Expression",
+        "name": "httpcore",
+        "version": "1.0.9"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE",
+          "vendor/http-parser/LICENSE-MIT",
+          "vendor/llhttp/LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "httptools",
+        "version": "0.8.0"
+      },
+      {
+        "license": "BSD-3-Clause",
+        "license_classifiers": [
+          "BSD License"
+        ],
+        "license_files": [],
+        "license_source": "License",
+        "name": "httpx",
+        "version": "0.28.1"
+      },
+      {
+        "license": "BSD-3-Clause",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE.md"
+        ],
+        "license_source": "License-Expression",
+        "name": "idna",
+        "version": "3.19"
+      },
+      {
+        "license": "BSD-3-Clause AND ISC",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE.txt"
+        ],
+        "license_source": "License-Expression",
+        "name": "ijson",
+        "version": "3.5.1"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "jiter",
+        "version": "0.16.0"
+      },
+      {
+        "license": "MIT License",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENSE",
+          "LICENSE.markdown-it"
+        ],
+        "license_source": "Classifier",
+        "name": "markdown-it-py",
+        "version": "4.2.0"
+      },
+      {
+        "license": "MIT License",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [],
+        "license_source": "Classifier",
+        "name": "mdurl",
+        "version": "0.1.2"
+      },
+      {
+        "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE.txt",
+          "numpy/_core/include/numpy/libdivide/LICENSE.txt",
+          "numpy/_core/src/common/pythoncapi-compat/COPYING",
+          "numpy/_core/src/highway/LICENSE",
+          "numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+          "numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+          "numpy/_core/src/umath/svml/LICENSE",
+          "numpy/fft/pocketfft/LICENSE.md",
+          "numpy/linalg/lapack_lite/LICENSE.txt",
+          "numpy/ma/LICENSE",
+          "numpy/random/LICENSE.md",
+          "numpy/random/src/distributions/LICENSE.md",
+          "numpy/random/src/mt19937/LICENSE.md",
+          "numpy/random/src/pcg64/LICENSE.md",
+          "numpy/random/src/philox/LICENSE.md",
+          "numpy/random/src/sfc64/LICENSE.md",
+          "numpy/random/src/splitmix64/LICENSE.md"
+        ],
+        "license_source": "License-Expression",
+        "name": "numpy",
+        "version": "2.5.2"
+      },
+      {
+        "license": "Apache-2.0",
+        "license_classifiers": [
+          "Apache Software License"
+        ],
+        "license_files": [],
+        "license_source": "License",
+        "name": "openai",
+        "version": "2.54.0"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENCE.rst"
+        ],
+        "license_source": "License",
+        "name": "openpyxl",
+        "version": "3.1.5"
+      },
+      {
+        "license": "BSD License",
+        "license_classifiers": [
+          "BSD License"
+        ],
+        "license_files": [],
+        "license_source": "Classifier",
+        "name": "pandas",
+        "version": "2.3.3"
+      },
+      {
+        "license": "Apache-2.0",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE.txt",
+          "NOTICE.txt"
+        ],
+        "license_source": "License-Expression",
+        "name": "pyarrow",
+        "version": "23.0.1"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "pydantic",
+        "version": "2.13.5"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "pydantic-settings",
+        "version": "2.15.0"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "pydantic_core",
+        "version": "2.46.5"
+      },
+      {
+        "license": "BSD-2-Clause",
+        "license_classifiers": [],
+        "license_files": [
+          "AUTHORS",
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "Pygments",
+        "version": "2.21.0"
+      },
+      {
+        "license": "Dual License",
+        "license_classifiers": [
+          "Apache Software License",
+          "BSD License"
+        ],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License",
+        "name": "python-dateutil",
+        "version": "2.9.0.post0"
+      },
+      {
+        "license": "BSD-3-Clause",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License",
+        "name": "python-dotenv",
+        "version": "1.2.3"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENSE.txt"
+        ],
+        "license_source": "License",
+        "name": "pytz",
+        "version": "2026.3.post1"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License",
+        "name": "PyYAML",
+        "version": "6.0.3"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License",
+        "name": "rich",
+        "version": "15.0.0"
+      },
+      {
+        "license": "ISC License",
+        "license_classifiers": [
+          "ISC License (ISCL)"
+        ],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License",
+        "name": "shellingham",
+        "version": "1.5.4"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License",
+        "name": "six",
+        "version": "1.17.0"
+      },
+      {
+        "license": "MIT OR Apache-2.0",
+        "license_classifiers": [
+          "Apache Software License",
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENSE",
+          "LICENSE.APACHE2",
+          "LICENSE.MIT"
+        ],
+        "license_source": "License",
+        "name": "sniffio",
+        "version": "1.3.1"
+      },
+      {
+        "license": "BSD-3-Clause",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE.md"
+        ],
+        "license_source": "License-Expression",
+        "name": "starlette",
+        "version": "1.6.0"
+      },
+      {
+        "license": "MPL-2.0 AND MIT",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENCE"
+        ],
+        "license_source": "License",
+        "name": "tqdm",
+        "version": "4.70.0"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "typer",
+        "version": "0.27.2"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "typing-inspection",
+        "version": "0.4.4"
+      },
+      {
+        "license": "PSF-2.0",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "typing_extensions",
+        "version": "4.16.0"
+      },
+      {
+        "license": "Apache-2.0",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE",
+          "licenses/LICENSE_APACHE"
+        ],
+        "license_source": "License",
+        "name": "tzdata",
+        "version": "2026.3"
+      },
+      {
+        "license": "BSD-3-Clause",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE.md"
+        ],
+        "license_source": "License-Expression",
+        "name": "uvicorn",
+        "version": "0.52.4"
+      },
+      {
+        "license": "MIT License",
+        "license_classifiers": [
+          "Apache Software License",
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENSE-APACHE",
+          "LICENSE-MIT"
+        ],
+        "license_source": "License",
+        "name": "uvloop",
+        "version": "0.22.1"
+      },
+      {
+        "license": "MIT",
+        "license_classifiers": [
+          "MIT License"
+        ],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License",
+        "name": "watchfiles",
+        "version": "1.2.0"
+      },
+      {
+        "license": "BSD-3-Clause",
+        "license_classifiers": [],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License-Expression",
+        "name": "websockets",
+        "version": "17.1"
+      },
+      {
+        "license": "BSD",
+        "license_classifiers": [
+          "BSD License"
+        ],
+        "license_files": [
+          "LICENSE"
+        ],
+        "license_source": "License",
+        "name": "xlrd",
+        "version": "2.0.2"
+      }
+    ]
+  },
+  "container_os_inventory": {
+    "backend": {
+      "ecosystem": "Debian dpkg",
+      "package_count": 105,
+      "packages": [
+        {
+          "copyright_file_present": true,
+          "name": "adduser",
+          "version": "3.134"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "apt",
+          "version": "2.6.1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "base-files",
+          "version": "12.4+deb12u15"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "base-passwd",
+          "version": "3.6.1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "bash",
+          "version": "5.2.15-2+b13"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "bsdutils",
+          "version": "1:2.38.1-5+deb12u3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "ca-certificates",
+          "version": "20250419~deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "coreutils",
+          "version": "9.1-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "dash",
+          "version": "0.5.12-2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "debconf",
+          "version": "1.5.82"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "debian-archive-keyring",
+          "version": "2023.3+deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "debianutils",
+          "version": "5.7-0.5~deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "diffutils",
+          "version": "1:3.8-4"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "dpkg",
+          "version": "1.21.23"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "e2fsprogs",
+          "version": "1.47.0-2+b2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "findutils",
+          "version": "4.9.0-4"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "gcc-12-base:amd64",
+          "version": "12.2.0-14+deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "gpgv",
+          "version": "2.2.40-1.1+deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "grep",
+          "version": "3.8-5"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "gzip",
+          "version": "1.12-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "hostname",
+          "version": "3.23+nmu1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "init-system-helpers",
+          "version": "1.65.2+deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libacl1:amd64",
+          "version": "2.3.1-3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libapt-pkg6.0:amd64",
+          "version": "2.6.1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libattr1:amd64",
+          "version": "1:2.5.1-4"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libaudit-common",
+          "version": "1:3.0.9-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libaudit1:amd64",
+          "version": "1:3.0.9-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libblkid1:amd64",
+          "version": "2.38.1-5+deb12u3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libbz2-1.0:amd64",
+          "version": "1.0.8-5+b1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libc-bin",
+          "version": "2.36-9+deb12u14"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libc6:amd64",
+          "version": "2.36-9+deb12u14"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libcap-ng0:amd64",
+          "version": "0.8.3-1+b3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libcap2:amd64",
+          "version": "1:2.66-4+deb12u3+b1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libcom-err2:amd64",
+          "version": "1.47.0-2+b2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libcrypt1:amd64",
+          "version": "1:4.4.33-2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libdb5.3:amd64",
+          "version": "5.3.28+dfsg2-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libdebconfclient0:amd64",
+          "version": "0.270"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libext2fs2:amd64",
+          "version": "1.47.0-2+b2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libffi8:amd64",
+          "version": "3.4.4-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libgcc-s1:amd64",
+          "version": "12.2.0-14+deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libgcrypt20:amd64",
+          "version": "1.10.1-3+deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libgdbm6:amd64",
+          "version": "1.23-3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libgmp10:amd64",
+          "version": "2:6.2.1+dfsg1-1.1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libgnutls30:amd64",
+          "version": "3.7.9-2+deb12u7"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libgpg-error0:amd64",
+          "version": "1.46-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libgssapi-krb5-2:amd64",
+          "version": "1.20.1-2+deb12u5"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libhogweed6:amd64",
+          "version": "3.8.1-2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libidn2-0:amd64",
+          "version": "2.3.3-1+b1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libk5crypto3:amd64",
+          "version": "1.20.1-2+deb12u5"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libkeyutils1:amd64",
+          "version": "1.6.3-2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libkrb5-3:amd64",
+          "version": "1.20.1-2+deb12u5"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libkrb5support0:amd64",
+          "version": "1.20.1-2+deb12u5"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "liblz4-1:amd64",
+          "version": "1.9.4-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "liblzma5:amd64",
+          "version": "5.4.1-1+deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libmd0:amd64",
+          "version": "1.0.4-2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libmount1:amd64",
+          "version": "2.38.1-5+deb12u3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libncursesw6:amd64",
+          "version": "6.4-4"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libnettle8:amd64",
+          "version": "3.8.1-2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libnsl2:amd64",
+          "version": "1.3.0-2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libp11-kit0:amd64",
+          "version": "0.24.1-2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libpam-modules-bin",
+          "version": "1.5.2-6+deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libpam-modules:amd64",
+          "version": "1.5.2-6+deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libpam-runtime",
+          "version": "1.5.2-6+deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libpam0g:amd64",
+          "version": "1.5.2-6+deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libpcre2-8-0:amd64",
+          "version": "10.42-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libreadline8:amd64",
+          "version": "8.2-1.3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libseccomp2:amd64",
+          "version": "2.5.4-1+deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libselinux1:amd64",
+          "version": "3.4-1+b6"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libsemanage-common",
+          "version": "3.4-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libsemanage2:amd64",
+          "version": "3.4-1+b5"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libsepol2:amd64",
+          "version": "3.4-2.1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libsmartcols1:amd64",
+          "version": "2.38.1-5+deb12u3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libsqlite3-0:amd64",
+          "version": "3.40.1-2+deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libss2:amd64",
+          "version": "1.47.0-2+b2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libssl3:amd64",
+          "version": "3.0.20-1~deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libstdc++6:amd64",
+          "version": "12.2.0-14+deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libsystemd0:amd64",
+          "version": "252.39-1~deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libtasn1-6:amd64",
+          "version": "4.19.0-2+deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libtinfo6:amd64",
+          "version": "6.4-4"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libtirpc-common",
+          "version": "1.3.3+ds-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libtirpc3:amd64",
+          "version": "1.3.3+ds-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libudev1:amd64",
+          "version": "252.39-1~deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libunistring2:amd64",
+          "version": "1.0-2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libuuid1:amd64",
+          "version": "2.38.1-5+deb12u3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libxxhash0:amd64",
+          "version": "0.8.1-1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "libzstd1:amd64",
+          "version": "1.5.4+dfsg2-5"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "login",
+          "version": "1:4.13+dfsg1-1+deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "logsave",
+          "version": "1.47.0-2+b2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "mawk",
+          "version": "1.3.4.20200120-3.1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "mount",
+          "version": "2.38.1-5+deb12u3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "ncurses-base",
+          "version": "6.4-4"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "ncurses-bin",
+          "version": "6.4-4"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "netbase",
+          "version": "6.4"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "openssl",
+          "version": "3.0.20-1~deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "passwd",
+          "version": "1:4.13+dfsg1-1+deb12u2"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "perl-base",
+          "version": "5.36.0-7+deb12u3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "readline-common",
+          "version": "8.2-1.3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "sed",
+          "version": "4.9-1+deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "sysvinit-utils",
+          "version": "3.06-4"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "tar",
+          "version": "1.34+dfsg-1.2+deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "tzdata",
+          "version": "2026b-0+deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "usr-is-merged",
+          "version": "37~deb12u1"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "util-linux",
+          "version": "2.38.1-5+deb12u3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "util-linux-extra",
+          "version": "2.38.1-5+deb12u3"
+        },
+        {
+          "copyright_file_present": true,
+          "name": "zlib1g:amd64",
+          "version": "1:1.2.13.dfsg-1"
+        }
+      ],
+      "review_status": "inventory-only; Debian copyright files located but licenses not normalized"
+    },
+    "web": {
+      "ecosystem": "Alpine apk",
+      "manual_review": [
+        {
+          "name": "alpine-baselayout",
+          "reasons": [
+            "reciprocal-license identifier"
+          ]
+        },
+        {
+          "name": "alpine-baselayout-data",
+          "reasons": [
+            "reciprocal-license identifier"
+          ]
+        },
+        {
+          "name": "apk-tools",
+          "reasons": [
+            "reciprocal-license identifier"
+          ]
+        },
+        {
+          "name": "busybox",
+          "reasons": [
+            "reciprocal-license identifier"
+          ]
+        },
+        {
+          "name": "busybox-binsh",
+          "reasons": [
+            "reciprocal-license identifier"
+          ]
+        },
+        {
+          "name": "ca-certificates-bundle",
+          "reasons": [
+            "reciprocal-license identifier",
+            "compound or non-standard license metadata"
+          ]
+        },
+        {
+          "name": "gettext-envsubst",
+          "reasons": [
+            "reciprocal-license identifier",
+            "compound or non-standard license metadata"
+          ]
+        },
+        {
+          "name": "libapk",
+          "reasons": [
+            "reciprocal-license identifier"
+          ]
+        },
+        {
+          "name": "libintl",
+          "reasons": [
+            "reciprocal-license identifier"
+          ]
+        },
+        {
+          "name": "musl-utils",
+          "reasons": [
+            "reciprocal-license identifier",
+            "compound or non-standard license metadata"
+          ]
+        },
+        {
+          "name": "scanelf",
+          "reasons": [
+            "reciprocal-license identifier"
+          ]
+        },
+        {
+          "name": "ssl_client",
+          "reasons": [
+            "reciprocal-license identifier"
+          ]
+        }
+      ],
+      "package_count": 21,
+      "packages": [
+        {
+          "license": "GPL-2.0-only",
+          "name": "alpine-baselayout",
+          "version": "3.7.2-r1"
+        },
+        {
+          "license": "GPL-2.0-only",
+          "name": "alpine-baselayout-data",
+          "version": "3.7.2-r1"
+        },
+        {
+          "license": "MIT",
+          "name": "alpine-keys",
+          "version": "2.6-r0"
+        },
+        {
+          "license": "MIT",
+          "name": "alpine-release",
+          "version": "3.24.1-r0"
+        },
+        {
+          "license": "GPL-2.0-only",
+          "name": "apk-tools",
+          "version": "3.0.6-r0"
+        },
+        {
+          "license": "GPL-2.0-only",
+          "name": "busybox",
+          "version": "1.37.0-r31"
+        },
+        {
+          "license": "GPL-2.0-only",
+          "name": "busybox-binsh",
+          "version": "1.37.0-r31"
+        },
+        {
+          "license": "MPL-2.0 AND MIT",
+          "name": "ca-certificates-bundle",
+          "version": "20260611-r0"
+        },
+        {
+          "license": "GPL-3.0-or-later AND LGPL-2.1-or-later AND MIT",
+          "name": "gettext-envsubst",
+          "version": "1.0-r0"
+        },
+        {
+          "license": "GPL-2.0-only",
+          "name": "libapk",
+          "version": "3.0.6-r0"
+        },
+        {
+          "license": "Apache-2.0",
+          "name": "libcrypto3",
+          "version": "3.5.8-r0"
+        },
+        {
+          "license": "LGPL-2.1-or-later",
+          "name": "libintl",
+          "version": "1.0-r0"
+        },
+        {
+          "license": "Apache-2.0",
+          "name": "libssl3",
+          "version": "3.5.8-r0"
+        },
+        {
+          "license": "MIT",
+          "name": "musl",
+          "version": "1.2.6-r2"
+        },
+        {
+          "license": "MIT AND BSD-2-Clause AND GPL-2.0-or-later",
+          "name": "musl-utils",
+          "version": "1.2.6-r2"
+        },
+        {
+          "license": "2-clause BSD-like license",
+          "name": "nginx",
+          "version": "1.30.4-r1"
+        },
+        {
+          "license": "BSD-3-Clause",
+          "name": "pcre2",
+          "version": "10.48-r0"
+        },
+        {
+          "license": "GPL-2.0-only",
+          "name": "scanelf",
+          "version": "1.3.9-r1"
+        },
+        {
+          "license": "GPL-2.0-only",
+          "name": "ssl_client",
+          "version": "1.37.0-r31"
+        },
+        {
+          "license": "Public-Domain",
+          "name": "tzdata",
+          "version": "2026c-r0"
+        },
+        {
+          "license": "Zlib",
+          "name": "zlib",
+          "version": "1.3.2-r0"
+        }
+      ],
+      "review_status": "inventory-only; machine-readable labels need legal review"
+    }
+  },
+  "frontend_application": {
+    "manual_review": [],
+    "production_package_count": 3,
+    "production_packages": [
+      {
+        "license": "MIT",
+        "name": "react",
+        "version": "19.2.8"
+      },
+      {
+        "license": "MIT",
+        "name": "react-dom",
+        "version": "19.2.8"
+      },
+      {
+        "license": "MIT",
+        "name": "scheduler",
+        "version": "0.27.0"
+      }
+    ]
+  },
+  "inputs": {
+    "backend_base_images": [
+      "ghcr.io/astral-sh/uv:0.11.1@sha256:fc93e9ecd7218e9ec8fba117af89348eef8fd2463c50c13347478769aaedd0ce",
+      "python:3.12.14-slim-bookworm@sha256:782412e85d0f0984994c290652577d4018aff08145c85b262bb63dc0c7522254",
+      "python:3.12.14-slim-bookworm@sha256:782412e85d0f0984994c290652577d4018aff08145c85b262bb63dc0c7522254"
+    ],
+    "backend_dockerfile_sha256": "d678c1e32f44e7ae18d21229119af236f1835862b8f9d058bd4de146b6fe3eea",
+    "backend_image": "ask-dont-upload-api",
+    "backend_lock_sha256": "0affc6db2acf0d0b2be4fde8fbde635299ec07dad470723a235ddea86c1beb8a",
+    "frontend_lock_sha256": "9bfd13861a3ead7d6669ec735a05f47089d5d7fd49612dd1255b53f72330522e",
+    "web_base_images": [
+      "node:24.20.0-alpine@sha256:e67514e5d0f6c46656005e1b693b2ec9d52e80b641307de684d4a015ba7a4eaf",
+      "nginxinc/nginx-unprivileged:1.30.4-alpine-slim@sha256:b1d850535f815f18e9dd12ca7e9f4d36de36a49e246ccd8ef64289b0d06bde49"
+    ],
+    "web_dockerfile_sha256": "3abfebca2840ee63adb4d8efbad928d9a6a828d75deb1c40dfe63254f0a371ca",
+    "web_image": "ask-dont-upload-web"
+  },
+  "project_version": "0.4.0",
+  "release_gates": {
+    "alpine_license_metadata_complete": true,
+    "application_license_metadata_complete": true,
+    "container_os_legal_review_complete": false,
+    "debian_copyright_files_present": true,
+    "root_project_license_present": false
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "application_dependencies": "license-metadata completeness and drift",
+    "build_only_dependencies": "excluded unless shipped in the final image",
+    "container_os_packages": "inventory only; no legal compatibility conclusion",
+    "legal_advice": false
+  }
+}

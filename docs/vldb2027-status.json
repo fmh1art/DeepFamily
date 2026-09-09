@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-09-08",
+  "official_urls": {
+    "homepage": "https://www.vldb.org/2027/",
+    "important_dates": "https://www.vldb.org/2027/important-dates.html",
+    "formatting_guidelines": "https://www.vldb.org/2027/formatting-guidelines.html",
+    "template_repository": "https://github.com/vldbproceedings/VLDB-Template.git"
+  },
+  "expected": {
+    "demo_cfp_link_present": false,
+    "demo_dates_row_present": false,
+    "template_head": "39c95f5c6fcbe652a83be24e4eff8f2134cd3fbc"
+  },
+  "interpretation": "A mismatch is a review trigger, not an automatic update: inspect the official pages, revise assumptions, then deliberately replace this snapshot."
+}

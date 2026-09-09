@@ -1,0 +1,17 @@
+{
+  "outputs": {
+    "paper/figures/system-overview.pdf": {
+      "bytes": 23518,
+      "format": "vector-pdf",
+      "sha256": "c0cfb0bbf0d3d0778532aa8377521f404e5023ec650317afe4744916f1fd92f3"
+    },
+    "paper/figures/system-overview.png": {
+      "bytes": 152391,
+      "format": "png-300-dpi",
+      "sha256": "66e69d8f1e0a08942f1059a525406c976cd10cf47fcee1e3587bae8acce8f240"
+    }
+  },
+  "schema_version": "askdu-system-figure-v1",
+  "source_script": "scripts/render_system_figure.py",
+  "source_sha256": "cc841dc079842862eb8436f9e1db4237cbe950d43a60fd22c8b9952fed607cf9"
+}

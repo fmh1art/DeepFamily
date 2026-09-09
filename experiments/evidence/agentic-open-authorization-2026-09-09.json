@@ -1,0 +1,24 @@
+{
+  "schema_version": "askdu-evaluation-authorization-note-v1",
+  "date": "2026-09-09",
+  "authority": "User explicitly granted permission to automatically complete the previously described task.",
+  "scope": "Execute the previously specified 30-question, 180-case paired open-pool agentic evaluation in bounded batches, followed by scoring after the complete prediction seal.",
+  "plan_path": "experiments/results/agentic-open-v1/plan.json",
+  "plan_sha256": "a0ccd26a553a963ad1cc66ebe02c74663ce6ec6c15395129953307b9103b0664",
+  "source_sha256": "c9c27b70f76a79e80f69cc5de5c5684a95e8ac04dad0d10d9d4938a5911ca9bf",
+  "first_batch_case_limit": 6,
+  "per_case_logical_call_limit": 68,
+  "per_logical_call_transport_retries": 2,
+  "execution_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "boundaries": [
+    "Use the existing private credential and the one project-pinned ModelHub model for every model-backed stage.",
+    "Do not read benchmark answers before sealing all predictions; retain failures and interrupted first attempts.",
+    "Do not change the frozen implementation or retry failed cases as new first-pass results.",
+    "This open-pool plan does not unblind community 45 or replace its superseded model-mode protocol.",
+    "Permission to work does not supply unknown author identities, affiliations, ownership facts, human review, or a public artifact URL."
+  ]
+}

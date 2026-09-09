@@ -1,0 +1,1247 @@
+{
+  "database": "Crossref",
+  "queried_on": "2026-09-06",
+  "requests": [
+    {
+      "label": "Graphy",
+      "doi": "10.1145/3722212.3725106",
+      "endpoint": "https://api.crossref.org/works/10.1145%2F3722212.3725106?mailto=demo-audit%40example.com",
+      "http_status": 200,
+      "response": {
+        "status": "ok",
+        "message-type": "work",
+        "message-version": "1.0.0",
+        "message": {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                17
+              ]
+            ],
+            "date-time": "2026-06-17T16:22:00Z",
+            "timestamp": 1781713320182,
+            "version": "3.54.5"
+          },
+          "publisher-location": "New York, NY, USA",
+          "reference-count": 9,
+          "publisher": "ACM",
+          "content-domain": {
+            "domain": [
+              "dl.acm.org"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [],
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                22
+              ]
+            ]
+          },
+          "DOI": "10.1145/3722212.3725106",
+          "type": "proceedings-article",
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                17
+              ]
+            ],
+            "date-time": "2025-06-17T09:00:26Z",
+            "timestamp": 1750150826000
+          },
+          "page": "147-150",
+          "update-policy": "https://doi.org/10.1145/crossmark-policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 3,
+          "title": [
+            "Graphy'our Data: Towards End-to-End Modeling, Exploring and Generating Report from Raw Data"
+          ],
+          "prefix": "10.1145",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0009-0009-4735-3835",
+              "authenticated-orcid": false,
+              "given": "Longbin",
+              "family": "Lai",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Alibaba Group, Hangzhou, Zhejiang, China"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0009-0009-1441-614X",
+              "authenticated-orcid": false,
+              "given": "Changwei",
+              "family": "Luo",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Alibaba Group, Hangzhou, Zhejiang, China"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-9427-3012",
+              "authenticated-orcid": false,
+              "given": "Yunkai",
+              "family": "Lou",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Alibaba Group, Hangzhou, Zhejiang, China"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0009-0009-1559-0297",
+              "authenticated-orcid": false,
+              "given": "Mingchen",
+              "family": "Ju",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "University of New South Wales, Sydney, NSW, Australia"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-1772-6863",
+              "authenticated-orcid": false,
+              "given": "Zhengyi",
+              "family": "Yang",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "University of New South Wales, Sydney, NSW, Australia"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "member": "320",
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                22
+              ]
+            ]
+          },
+          "reference": [
+            {
+              "key": "e_1_3_2_1_1_1",
+              "unstructured": "2024. arXiv.org e-Print archive. https://arxiv.org/."
+            },
+            {
+              "key": "e_1_3_2_1_2_1",
+              "unstructured": "2024. GPT-4o the new flagship model that can reason across audio vision and text in real time. https://openai.com/index/hello-gpt-4o/"
+            },
+            {
+              "key": "e_1_3_2_1_3_1",
+              "unstructured": "2024. Graphy. https://github.com/GraphScope/portal/tree/main/python/graphy."
+            },
+            {
+              "key": "e_1_3_2_1_4_1",
+              "unstructured": "2024. Kuzu. https://kuzudb.com/."
+            },
+            {
+              "key": "e_1_3_2_1_5_1",
+              "unstructured": "2024. Top-performance foundation models from Alibaba Cloud. https://www.alibabacloud.com/en/solutions/generative-ai/qwen?_p_lc=1"
+            },
+            {
+              "key": "e_1_3_2_1_6_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/3476311.3476369"
+            },
+            {
+              "key": "e_1_3_2_1_7_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "J. Gray A. Bosworth A. Lyaman and H. Pirahesh. 1996. Data cube: a relational aggregation operator generalizing GROUP-BY CROSS-TAB and SUB-TOTALS. In ICDE. 152--159.",
+              "DOI": "10.1109/ICDE.1996.492099"
+            },
+            {
+              "key": "e_1_3_2_1_8_1",
+              "unstructured": "Shanshan Han Qifan Zhang and et al. 2024. LLM Multi-Agent Systems: Challenges and Open Problems. https://arxiv.org/abs/2402.03578"
+            },
+            {
+              "key": "e_1_3_2_1_9_1",
+              "unstructured": "Patrick Lewis Ethan Perez and et al. 2021. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. https://arxiv.org/abs/2005.11401"
+            }
+          ],
+          "event": {
+            "name": "SIGMOD/PODS '25: International Conference on Management of Data",
+            "location": "Berlin Germany",
+            "acronym": "SIGMOD/PODS '25",
+            "sponsor": [
+              "SIGMOD ACM Special Interest Group on Management of Data"
+            ]
+          },
+          "container-title": [
+            "Companion of the 2025 International Conference on Management of Data"
+          ],
+          "original-title": [],
+          "link": [
+            {
+              "URL": "https://dl.acm.org/doi/pdf/10.1145/3722212.3725106",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                10
+              ]
+            ],
+            "date-time": "2025-09-10T22:40:41Z",
+            "timestamp": 1757544041000
+          },
+          "score": 1,
+          "resource": {
+            "primary": {
+              "URL": "https://dl.acm.org/doi/10.1145/3722212.3725106"
+            }
+          },
+          "subtitle": [],
+          "short-title": [],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                22
+              ]
+            ]
+          },
+          "references-count": 9,
+          "alternative-id": [
+            "10.1145/3722212.3725106",
+            "10.1145/3722212"
+          ],
+          "URL": "https://doi.org/10.1145/3722212.3725106",
+          "relation": {},
+          "subject": [],
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                22
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "2025-06-22",
+              "order": 3,
+              "name": "published",
+              "label": "Published",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Sentence-to-Model",
+      "doi": "10.1145/3722212.3725134",
+      "endpoint": "https://api.crossref.org/works/10.1145%2F3722212.3725134?mailto=demo-audit%40example.com",
+      "http_status": 200,
+      "response": {
+        "status": "ok",
+        "message-type": "work",
+        "message-version": "1.0.0",
+        "message": {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                6
+              ]
+            ],
+            "date-time": "2026-01-06T13:08:40Z",
+            "timestamp": 1767704920691,
+            "version": "3.44.0"
+          },
+          "publisher-location": "New York, NY, USA",
+          "reference-count": 9,
+          "publisher": "ACM",
+          "content-domain": {
+            "domain": [
+              "dl.acm.org"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [],
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                22
+              ]
+            ]
+          },
+          "DOI": "10.1145/3722212.3725134",
+          "type": "proceedings-article",
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                17
+              ]
+            ],
+            "date-time": "2025-06-17T09:01:44Z",
+            "timestamp": 1750150904000
+          },
+          "page": "83-86",
+          "update-policy": "https://doi.org/10.1145/crossmark-policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 1,
+          "title": [
+            "Sentence to Model: Cost-Effective Data Collection LLM Agent"
+          ],
+          "prefix": "10.1145",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0009-0003-3040-9720",
+              "authenticated-orcid": false,
+              "given": "Yael",
+              "family": "Einy",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Tel Aviv University, Tel Aviv, Israel"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0009-0004-0281-8313",
+              "authenticated-orcid": false,
+              "given": "Guy",
+              "family": "Dar",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Tel Aviv University, Tel Aviv, Israel"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-4082-7128",
+              "authenticated-orcid": false,
+              "given": "Slava",
+              "family": "Novgorodov",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Tel Aviv University, Tel Aviv, Israel"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-8566-8821",
+              "authenticated-orcid": false,
+              "given": "Tova",
+              "family": "Milo",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Tel Aviv University, Tel Aviv, Israel"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "member": "320",
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                22
+              ]
+            ]
+          },
+          "reference": [
+            {
+              "key": "e_1_3_2_1_1_1",
+              "volume-title": "Language models enable simple systems for generating structured views of heterogeneous data lakes. arXiv preprint arXiv:2304.09433",
+              "author": "Arora Simran",
+              "year": "2023",
+              "unstructured": "Simran Arora, Brandon Yang, Sabri Eyuboglu, Avanika Narayan, Andrew Hojel, Immanuel Trummer, and Christopher Ré. 2023. Language models enable simple systems for generating structured views of heterogeneous data lakes. arXiv preprint arXiv:2304.09433 (2023)."
+            },
+            {
+              "key": "e_1_3_2_1_2_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-540-76298-0_52"
+            },
+            {
+              "key": "e_1_3_2_1_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s10115-023-01935-1"
+            },
+            {
+              "key": "e_1_3_2_1_4_1",
+              "volume-title": "Symphony: Towards Natural Language Query Answering over Multi-modal Data Lakes. In CIDR.",
+              "author": "Chen Zui",
+              "year": "2023",
+              "unstructured": "Zui Chen, Zihui Gu, Lei Cao, Ju Fan, Samuel Madden, and Nan Tang. 2023. Symphony: Towards Natural Language Query Answering over Multi-modal Data Lakes. In CIDR."
+            },
+            {
+              "key": "e_1_3_2_1_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3665601.3669848"
+            },
+            {
+              "key": "e_1_3_2_1_6_1",
+              "volume-title": "Datamap-Driven Tabular Coreset Selection for Classifier Training. VLDB",
+              "author": "Hadar Aviv",
+              "year": "2025",
+              "unstructured": "Aviv Hadar, Tova Milo, and Kathy Razmadze. 2025. Datamap-Driven Tabular Coreset Selection for Classifier Training. VLDB (2025)."
+            },
+            {
+              "key": "e_1_3_2_1_7_1",
+              "unstructured": "Noah Hollmann Samuel Müller and Frank Hutter. 2023. Large Language Models for Automated Data Science: Introducing CAAFE for Context-Aware Automated Feature Engineering. In NeurIPS."
+            },
+            {
+              "key": "e_1_3_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.18653/v1/2023.acl-long.147"
+            },
+            {
+              "key": "e_1_3_2_1_9_1",
+              "volume-title": "ReAct: Synergizing Reasoning and Acting in Language Models. ArXiv",
+              "author": "Yao Shunyu",
+              "year": "2022",
+              "unstructured": "Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. 2022. ReAct: Synergizing Reasoning and Acting in Language Models. ArXiv, Vol. abs/2210.03629 (2022)."
+            }
+          ],
+          "event": {
+            "name": "SIGMOD/PODS '25: International Conference on Management of Data",
+            "sponsor": [
+              "SIGMOD ACM Special Interest Group on Management of Data"
+            ],
+            "location": "Berlin Germany",
+            "acronym": "SIGMOD/PODS '25"
+          },
+          "container-title": [
+            "Companion of the 2025 International Conference on Management of Data"
+          ],
+          "original-title": [],
+          "link": [
+            {
+              "URL": "https://dl.acm.org/doi/pdf/10.1145/3722212.3725134",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                10
+              ]
+            ],
+            "date-time": "2025-09-10T22:37:50Z",
+            "timestamp": 1757543870000
+          },
+          "score": 1,
+          "resource": {
+            "primary": {
+              "URL": "https://dl.acm.org/doi/10.1145/3722212.3725134"
+            }
+          },
+          "subtitle": [],
+          "short-title": [],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                22
+              ]
+            ]
+          },
+          "references-count": 9,
+          "alternative-id": [
+            "10.1145/3722212.3725134",
+            "10.1145/3722212"
+          ],
+          "URL": "https://doi.org/10.1145/3722212.3725134",
+          "relation": {},
+          "subject": [],
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                22
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "2025-06-22",
+              "order": 3,
+              "name": "published",
+              "label": "Published",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "QueryArtisan",
+      "doi": "10.14778/3750601.3750647",
+      "endpoint": "https://api.crossref.org/works/10.14778%2F3750601.3750647?mailto=demo-audit%40example.com",
+      "http_status": 200,
+      "response": {
+        "status": "ok",
+        "message-type": "work",
+        "message-version": "1.0.0",
+        "message": {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                17
+              ]
+            ],
+            "date-time": "2025-09-17T03:18:53Z",
+            "timestamp": 1758079133012,
+            "version": "3.44.0"
+          },
+          "reference-count": 9,
+          "publisher": "Association for Computing Machinery (ACM)",
+          "issue": "12",
+          "content-domain": {
+            "domain": [
+              "dl.acm.org"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "Proc. VLDB Endow."
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                8
+              ]
+            ]
+          },
+          "abstract": "<jats:p>Querying and analyzing data in data lakes requires substantial manual intervention, including numerous data preprocessing steps, and often demands complex domain expertise. However, the advent of Large Language Models (LLMs) has introduced a promising solution to these challenges by providing a unified framework for interpreting the heterogeneous datasets within data lakes. In this paper, we demonstrate QueryArtisan, a novel LLM-powered analytical system tailored for data lakes. It enables users to issue complex queries in natural language without the need for domain-specific expertise. The system automatically executes user-submitted queries and performs data processing and analysis based on the query results. QueryArtisan extends beyond traditional ETL (Extract, Transform, Load) processes by generating just-in-time code customized for dataset-specific tasks. A suite of heterogeneous operators is developed to process data across various modalities. In addition, a cost-based query optimization mechanism is integrated to improve the efficiency of the generated code. Furthermore, QueryArtisan can dynamically instantiate multiple agents in response to user-defined analytical requirements to perform further in-depth analysis of the retrieved data.</jats:p>",
+          "DOI": "10.14778/3750601.3750647",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2025-09-16T13:38:05Z",
+            "timestamp": 1758029885000
+          },
+          "page": "5263-5266",
+          "update-policy": "https://doi.org/10.1145/crossmark-policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "A Demonstration of QueryArtisan: Real-Time Data Lake Analysis via Dynamically Generated Data Manipulation Code"
+          ],
+          "prefix": "10.14778",
+          "volume": "18",
+          "author": [
+            {
+              "given": "Wenhao",
+              "family": "Liu",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Zhejiang University"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Xiu",
+              "family": "Tang",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Zhejiang University"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Sai",
+              "family": "Wu",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Zhejiang University"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Chang",
+              "family": "Yao",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Zhejiang University"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Gongsheng",
+              "family": "Yuan",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Zhejiang University"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Gang",
+              "family": "Chen",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Zhejiang University"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "member": "320",
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                16
+              ]
+            ]
+          },
+          "reference": [
+            {
+              "key": "e_1_2_1_1_1",
+              "first-page": "1",
+              "article-title": "Termite: a system for tunneling through heterogeneous data. In aiDM@SIGMOD",
+              "volume": "7",
+              "author": "Fernandez Raul Castro",
+              "year": "2019",
+              "unstructured": "Raul Castro Fernandez and Samuel Madden. 2019. Termite: a system for tunneling through heterogeneous data. In aiDM@SIGMOD. ACM, 7:1–7:8.",
+              "journal-title": "ACM"
+            },
+            {
+              "key": "e_1_2_1_2_1",
+              "volume-title": "Yap",
+              "author": "Halim Felix",
+              "year": "2009",
+              "unstructured": "Felix Halim, Panagiotis Karras, and Roland H. C. Yap. 2009. Fast and effective histogram construction. In CIKM. ACM, 1167–1176."
+            },
+            {
+              "key": "e_1_2_1_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/3352063.3352116"
+            },
+            {
+              "key": "e_1_2_1_4_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Natasha F. Noy. 2020. When the Web is your Data Lake: Creating a Search Engine for Datasets on the Web. In SIGMOD. ACM 801.",
+              "DOI": "10.1145/3318464.3393815"
+            },
+            {
+              "key": "e_1_2_1_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/3705829.3705832"
+            },
+            {
+              "key": "e_1_2_1_6_1",
+              "volume-title": "Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task. In EMNLP. 3911–3921.",
+              "author": "Yu Tao",
+              "year": "2018",
+              "unstructured": "Tao Yu, Rui Zhang, Kai Yang, and et al. 2018. Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task. In EMNLP. 3911–3921."
+            },
+            {
+              "key": "e_1_2_1_7_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Qin Yuan Ye Yuan Zhenyu Wen He Wang and Shiyuan Tang. 2023. An effective framework for enhancing query answering in a heterogeneous data lake. In SIGIR. 770–780.",
+              "DOI": "10.1145/3539618.3591637"
+            },
+            {
+              "key": "e_1_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/1920841.1920944"
+            },
+            {
+              "key": "e_1_2_1_9_1",
+              "volume-title": "Seq2sql: Generating structured queries from natural language using reinforcement learning. arXiv preprint arXiv:1709.00103",
+              "author": "Zhong Victor",
+              "year": "2017",
+              "unstructured": "Victor Zhong, Caiming Xiong, and Richard Socher. 2017. Seq2sql: Generating structured queries from natural language using reinforcement learning. arXiv preprint arXiv:1709.00103 (2017)."
+            }
+          ],
+          "container-title": [
+            "Proceedings of the VLDB Endowment"
+          ],
+          "original-title": [],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://dl.acm.org/doi/pdf/10.14778/3750601.3750647",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2025-09-16T13:38:57Z",
+            "timestamp": 1758029937000
+          },
+          "score": 1,
+          "resource": {
+            "primary": {
+              "URL": "https://dl.acm.org/doi/10.14778/3750601.3750647"
+            }
+          },
+          "subtitle": [],
+          "short-title": [],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                8
+              ]
+            ]
+          },
+          "references-count": 9,
+          "journal-issue": {
+            "issue": "12",
+            "published-print": {
+              "date-parts": [
+                [
+                  2025,
+                  8
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "10.14778/3750601.3750647"
+          ],
+          "URL": "https://doi.org/10.14778/3750601.3750647",
+          "relation": {},
+          "ISSN": [
+            "2150-8097"
+          ],
+          "issn-type": [
+            {
+              "value": "2150-8097",
+              "type": "print"
+            }
+          ],
+          "subject": [],
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                8
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "2025-09-16",
+              "order": 3,
+              "name": "published",
+              "label": "Published",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "TableCopilot",
+      "doi": "10.14778/3750601.3750681",
+      "endpoint": "https://api.crossref.org/works/10.14778%2F3750601.3750681?mailto=demo-audit%40example.com",
+      "http_status": 200,
+      "response": {
+        "status": "ok",
+        "message-type": "work",
+        "message-version": "1.0.0",
+        "message": {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2026-08-18T03:06:15Z",
+            "timestamp": 1787022375462,
+            "version": "build-2736575974"
+          },
+          "reference-count": 13,
+          "publisher": "Association for Computing Machinery (ACM)",
+          "issue": "12",
+          "content-domain": {
+            "domain": [
+              "dl.acm.org"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "Proc. VLDB Endow."
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                8
+              ]
+            ]
+          },
+          "abstract": "<jats:p>The rise of LLM has enabled natural language-based table assistants, but existing systems assume users already have a well-formed table, neglecting the challenge of table discovery in large-scale table pools. To address this, we introduce TableCopilot, an LLM-powered assistant for interactive, precise, and personalized table discovery and analysis. We define a novel scenario, nlcTD, where users provide both a natural language condition and a query table, enabling intuitive and flexible table discovery for users of all expertise levels. To handle this, we propose Crofuma, a cross-fusion-based approach that learns and aggregates single-modal and cross-modal matching scores. Experimental results show Crofuma outperforms SOTA single-input methods by at least 12% on NDCG@5. We also release an instructional video, codebase, datasets, and other resources on GitHub to encourage community contributions. TableCopilot sets a new standard for interactive table assistants, making advanced table discovery accessible and integrated.</jats:p>",
+          "DOI": "10.14778/3750601.3750681",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2025-09-16T13:38:05Z",
+            "timestamp": 1758029885000
+          },
+          "page": "5399-5402",
+          "update-policy": "https://doi.org/10.1145/crossmark-policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 3,
+          "title": [
+            "TableCopilot: A Table Assistant Empowered by Natural Language Conditional Table Discovery"
+          ],
+          "prefix": "10.14778",
+          "volume": "18",
+          "author": [
+            {
+              "given": "Lingxi",
+              "family": "Cui",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "The State Key Laboratory of Blockchain and Data Security, Zhejiang University, Hangzhou High-Tech Zone (Binjiang), Institute of Blockchain and Data Security, Hangzhou, China"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Guanyu",
+              "family": "Jiang",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "The State Key Laboratory of Blockchain and Data Security, Zhejiang University, Hangzhou, China"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Huan",
+              "family": "Li",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "The State Key Laboratory of Blockchain and Data Security, Zhejiang University, Hangzhou High-Tech Zone (Binjiang), Institute of Blockchain and Data Security, Hangzhou, China"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Ke",
+              "family": "Chen",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "The State Key Laboratory of Blockchain and Data Security, Zhejiang University, Hangzhou High-Tech Zone (Binjiang), Institute of Blockchain and Data Security, Hangzhou, China"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Lidan",
+              "family": "Shou",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "The State Key Laboratory of Blockchain and Data Security, Zhejiang University, Hangzhou High-Tech Zone (Binjiang), Institute of Blockchain and Data Security, Hangzhou, China"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Gang",
+              "family": "Chen",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "The State Key Laboratory of Blockchain and Data Security, Zhejiang University, Hangzhou, China"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "member": "320",
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                16
+              ]
+            ]
+          },
+          "reference": [
+            {
+              "key": "e_1_2_1_1_1",
+              "unstructured": "2025. nlcTables. https://github.com/SuDIS-ZJU/nlcTables"
+            },
+            {
+              "key": "e_1_2_1_2_1",
+              "unstructured": "2025. TableCopilot Project. https://sudis-zju.github.io/table-copilot/"
+            },
+            {
+              "key": "e_1_2_1_3_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "C Chai Y Deng Y Zhan Z Cao Y Zhang L Cao Z Wang Yand Zhang Y Yuan G Wang and N Tang. 2024. LakeCompass: An End-to-End System for Data Maintenance Search and Analysis in Data Lakes. PVLDB 4381–4384.",
+              "DOI": "10.14778/3685800.3685880"
+            },
+            {
+              "key": "e_1_2_1_4_1",
+              "first-page": "08283",
+              "article-title": "TableCopilot: A Table Assistant Empowered by Natural Language Conditional Table Discovery",
+              "volume": "2507",
+              "author": "Cui L",
+              "year": "2025",
+              "unstructured": "L Cui, G Jiang, H Li, K Chen, L Shou, and G Chen. 2025. TableCopilot: A Table Assistant Empowered by Natural Language Conditional Table Discovery. ArXiv:2507.08283.",
+              "journal-title": "ArXiv"
+            },
+            {
+              "key": "e_1_2_1_5_1",
+              "first-page": "21523",
+              "article-title": "Tabular Data Augmentation for Machine Learning",
+              "volume": "2407",
+              "author": "Cui L",
+              "year": "2024",
+              "unstructured": "L Cui, H Li, K Chen, L Shou, and G Chen. 2024. Tabular Data Augmentation for Machine Learning: Progress and Prospects of Embracing Generative AI. ArXiv:2407.21523.",
+              "journal-title": "Progress and Prospects of Embracing Generative AI. ArXiv"
+            },
+            {
+              "key": "e_1_2_1_6_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Y Dong C Xiao T Nozawa M Enomoto and M Oyamada. 2023. DeepJoin:Joinable Table Discovery with Pre-Trained Language Models. PVLDB 2458–2470.",
+              "DOI": "10.14778/3603581.3603587"
+            },
+            {
+              "key": "e_1_2_1_7_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "G Fan J Wang Y Li D Zhang and R J. Miller. 2023. Semantics-aware Dataset Discovery from Data Lakes with Contextualized Column-based Representation Learning. PVLDB 1726–1739.",
+              "DOI": "10.14778/3587136.3587146"
+            },
+            {
+              "key": "e_1_2_1_8_1",
+              "volume-title": "Proc. ACM Manag. Data, 1–25",
+              "author": "Khatiwada A",
+              "year": "2023",
+              "unstructured": "A Khatiwada, G Fan, R Shraga, Z Chen, W Gatterbauer, R. Miller, and M Riedewald. 2023. SANTOS: Relationship-based Semantic Table Union Search. Proc. ACM Manag. Data, 1–25."
+            },
+            {
+              "key": "e_1_2_1_9_1",
+              "volume-title": "Proc. ACM Manag. Data, 176",
+              "author": "Li P",
+              "year": "2024",
+              "unstructured": "P Li, Y He, D Yashar, W Cui, S Ge, H Zhang, D R Fainman, D Zhang, and S Chaudhuri. 2024. Table-GPT: Table Fine-tuned GPT for Diverse Table Tasks. Proc. ACM Manag. Data, 176."
+            },
+            {
+              "key": "e_1_2_1_10_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "M Trabelsi Z Chen S Zhang B D. Davison and J Heflin. 2022. StruBERT: Structure-aware BERT for Table Search and Matching. In WWW. 442–451.",
+              "DOI": "10.1145/3485447.3511972"
+            },
+            {
+              "key": "e_1_2_1_11_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "F Wang K Sun M Chen J Pujara and P Szekely. 2021. Retrieving Complex Tables with Multi-Granular Graph Representation Learning. SIGIR 1472–1482.",
+              "DOI": "10.1145/3404835.3462909"
+            },
+            {
+              "key": "e_1_2_1_12_1",
+              "first-page": "19318",
+              "article-title": "TABLELLM: Enabling Tabular Data Manipulation by LLMs in Real Office Usage Scenarios",
+              "volume": "2403",
+              "author": "Zhang X",
+              "year": "2024",
+              "unstructured": "X Zhang, S Luo, B Zhang, Z Ma, J Zhang, G Li Y Li, Z Yao, K Xu, J Zhou, D Zhang-Li, J Yu, S Zhao, J Li, and J Tang. 2024. TABLELLM: Enabling Tabular Data Manipulation by LLMs in Real Office Usage Scenarios. ArXiv:2403.19318.",
+              "journal-title": "ArXiv"
+            },
+            {
+              "key": "e_1_2_1_13_1",
+              "volume-title": "Proc. ACM SIGMOD. 847–864",
+              "author": "Zhu E",
+              "unstructured": "E Zhu, D Deng, F Nargesian, and R J. Miller. 2019. JOSIE: Overlap Set Similarity Search for Finding Joinable Tables in Data Lakes. In Proc. ACM SIGMOD. 847–864."
+            }
+          ],
+          "container-title": [
+            "Proceedings of the VLDB Endowment"
+          ],
+          "original-title": [],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://dl.acm.org/doi/pdf/10.14778/3750601.3750681",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2025-09-16T13:43:17Z",
+            "timestamp": 1758030197000
+          },
+          "score": 1,
+          "resource": {
+            "primary": {
+              "URL": "https://dl.acm.org/doi/10.14778/3750601.3750681"
+            }
+          },
+          "subtitle": [],
+          "short-title": [],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                8
+              ]
+            ]
+          },
+          "references-count": 13,
+          "journal-issue": {
+            "issue": "12",
+            "published-print": {
+              "date-parts": [
+                [
+                  2025,
+                  8
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "10.14778/3750601.3750681"
+          ],
+          "URL": "https://doi.org/10.14778/3750601.3750681",
+          "relation": {},
+          "ISSN": [
+            "2150-8097"
+          ],
+          "issn-type": [
+            {
+              "value": "2150-8097",
+              "type": "print"
+            }
+          ],
+          "subject": [],
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                8
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "2025-09-16",
+              "order": 3,
+              "name": "published",
+              "label": "Published",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

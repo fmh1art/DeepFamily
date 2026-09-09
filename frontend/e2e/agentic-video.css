@@ -1,0 +1,76 @@
+/* Presentation-only frame: actual current-UI DOM excerpts, never synthetic results. */
+#askdu-recorded-film {
+  position: fixed; inset: 0; z-index: 100000; width: 1600px; height: 900px;
+  box-sizing: border-box; padding: 28px 48px; background: #f5f8fb; color: #172033;
+  display: grid; grid-template-rows: 94px 1fr 58px; gap: 16px; font: 18px/1.5 Arial, sans-serif;
+}
+#askdu-recorded-film > header { border-bottom: 2px solid #17877c; padding-bottom: 14px; }
+#askdu-recorded-film header small { color: #79551a; font-size: 16px; }
+#askdu-recorded-film header h1 { margin: 4px 0 0; font-size: 28px; letter-spacing: -.3px; }
+#askdu-recorded-film > footer { border-top: 1px solid #cbd5e1; padding-top: 8px; font: 18px/1.5 Arial, sans-serif; max-width: none; width: 100%; margin: 0; }
+#askdu-recorded-film .film-content { min-height: 0; overflow: auto; }
+#askdu-recorded-film .film-card { padding: 56px 70px; background: white; border-radius: 16px; }
+#askdu-recorded-film .film-card h2 { font-size: 44px; line-height: 1.25; max-width: 1200px; }
+#askdu-recorded-film .film-card p { font-size: 27px; line-height: 1.6; }
+#askdu-recorded-film .film-card small { font-size: 20px; color: #576779; }
+#askdu-recorded-film .film-content > * { margin-top: 0; }
+#askdu-recorded-film .question-composer { max-width: 1150px; margin: 14px auto; }
+#askdu-recorded-film .question-composer textarea { font-size: 24px; }
+#askdu-recorded-film .question-composer label { font-size: 18px; }
+#askdu-recorded-film .stage-io { margin: 0; }
+#askdu-recorded-film .discovery-network-workbench { margin: 0; align-items: start; }
+#askdu-recorded-film .discovery-step-content { padding-top: 10px; }
+#askdu-recorded-film .discovery-step-content > p,
+#askdu-recorded-film .discovery-step-title strong,
+#askdu-recorded-film .hop-io dd,
+#askdu-recorded-film .discovery-network-heading strong { font-size: 18px; }
+#askdu-recorded-film .discovery-step-nav strong,
+#askdu-recorded-film .discovery-step-timeline button,
+#askdu-recorded-film .hop-io dt,
+#askdu-recorded-film .discovery-network-heading small,
+#askdu-recorded-film .discovery-network-legend { font-size: 15px; }
+#askdu-recorded-film .network-nodes text { font-size: 13px; }
+#askdu-recorded-film .discovery-network svg { max-height: 440px; }
+#askdu-recorded-film .discovery-frontier { display: none; }
+#askdu-recorded-film .inspected-schema { display: none; }
+#askdu-recorded-film .prep-data-io { grid-template-columns: minmax(0, 1fr) 140px minmax(0, 1.6fr); }
+#askdu-recorded-film .stage-io-card { padding: 16px; }
+#askdu-recorded-film .stage-schema-list { gap: 5px; }
+#askdu-recorded-film .stage-schema-list code,
+#askdu-recorded-film .stage-schema-list span,
+#askdu-recorded-film .stage-schema-list strong,
+#askdu-recorded-film .stage-schema-list small { font-size: 14px; }
+#askdu-recorded-film .prepared-preview-table .structured-table { max-height: none; overflow: visible; }
+#askdu-recorded-film .prepared-preview-table table { min-width: 0; width: 100%; }
+#askdu-recorded-film .prepared-preview-table :is(th, td):nth-child(n+4) { display: none; }
+#askdu-recorded-film .prepared-preview-table tbody tr:nth-child(n+4) { display: none; }
+#askdu-recorded-film .prepared-preview-table :is(th, td) { font-size: 16px; padding: 7px 9px; }
+#askdu-recorded-film .prep-transform-bridge strong { font-size: 15px; }
+#askdu-recorded-film .prep-tree-workbench { margin: 0; }
+#askdu-recorded-film .prep-tree-node strong,
+#askdu-recorded-film .prep-source-node strong,
+#askdu-recorded-film .operator-shape dd,
+#askdu-recorded-film .operator-inspector > p { font-size: 18px; }
+#askdu-recorded-film .analysis-notebook { margin: 0; padding: 0; gap: 16px; }
+#askdu-recorded-film .notebook-cell { margin: 0; }
+#askdu-recorded-film .notebook-cell-details { margin-top: 8px; }
+#askdu-recorded-film .notebook-code-wrap { max-height: none; }
+#askdu-recorded-film .source-cell { font-size: 19px; line-height: 1.4; }
+#askdu-recorded-film .structured-object dt { font-size: 15px; }
+#askdu-recorded-film .structured-object dd { font-size: 20px; }
+#askdu-recorded-film .report-cover { padding: 24px; }
+#askdu-recorded-film .report-heading h1 { font-size: 28px; }
+#askdu-recorded-film .executive-answer h2 { font-size: 20px; }
+#askdu-recorded-film .report-narrative-grid { display: block; }
+#askdu-recorded-film .report-narrative-grid article { margin-bottom: 18px; }
+#askdu-recorded-film .report-narrative-grid p,
+#askdu-recorded-film .report-conclusion p { font-size: 21px; line-height: 1.6; }
+#askdu-recorded-film .report-limitations { margin-top: 16px; }
+#askdu-recorded-film .report-limitations li { font-size: 18px; line-height: 1.5; }
+#askdu-recorded-film .report-result-section { padding: 20px; }
+#askdu-recorded-film .report-result-layout { display: block; }
+#askdu-recorded-film .report-table-wrap { display: none; }
+#askdu-recorded-film .artifact-bar-row { min-height: 34px; }
+#askdu-recorded-film .artifact-bar-row > span,
+#askdu-recorded-film .artifact-bar-row > strong { font-size: 18px; }
+#askdu-recorded-film .artifact-chart figcaption { font-size: 17px; }
