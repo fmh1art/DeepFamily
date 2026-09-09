@@ -108,5 +108,6 @@ registry 采集与回归使用独立的 `askdu-paper-summary-refresh` 项目、8
 `cd46675d7f6b9c6cd96e49f85e0dbb68c2b5f90948b6daf11de834e5829aa18d`。
 
 本轮未改正文、实验数字或冻结评测实现。`make readiness-draft` 仍为 5 pending、1 fail
-（旧 held-out 实现冻结失效）；视频未同步重录。完整模型评测由独立进程继续进行，尚未
+（旧 held-out 实现冻结失效）。随后已同步重录[当前 UI 的无声回放](agentic-video.md)，
+未替代作者配音或终审。完整模型评测由独立进程继续进行，尚未
 封存及评分，不将其过程状态填入论文效果表。

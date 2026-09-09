@@ -38,5 +38,5 @@
 `c9c27b70f76a79e80f69cc5de5c5684a95e8ac04dad0d10d9d4938a5911ca9bf`。
 后续已重新采集两组论文截图并构建四页 PDF，详情见
 [agentic-replay-figure.md](agentic-replay-figure.md#摘要排版变更后的素材复核2026-09-09)。
-旧视频仍是历史 UI 制品，尚未重新录制；截图更新不代表视频已同步，也不代表整体
-paper/readiness 门禁通过。
+随后也已按当前 UI 重录[无声回放视频](agentic-video.md)，旧视频完整保留。
+它不包含作者旁白，仍是内部审阅稿；截图和视频同步不代表整体 paper/readiness 门禁通过。

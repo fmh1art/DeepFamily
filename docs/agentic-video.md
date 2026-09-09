@@ -4,10 +4,12 @@
 
 ## 直接查看
 
-[播放 2 分 24 秒回放](../artifacts/demo/agentic-replay-tyI28z/walkthrough.mp4)。
+[播放 2 分 24 秒回放](../artifacts/demo/agentic-replay-2aEw0n/walkthrough.mp4)。
 
 该文件位于本机忽略目录，未公开上传。与它同目录的 `capture.json` 记录原始运行、来源记录、
 采集脚本、当前演示面、服务实际提供的 JS/CSS、13 张画面及视频的 SHA-256。
+此版本已同步 `Answer at a glance` 的紧凑正文排版。旧版本
+`artifacts/demo/agentic-replay-tyI28z/` 完整保留，没有覆盖；它绑定的是旧 UI，不再作为上方默认播放文件。
 
 | 时间 | 画面 | 要说明的机制 |
 |---|---|---|
@@ -48,10 +50,11 @@ make demo-video-agentic
 构建字节不同、原始记录摘要不符、浏览器报错、外层画布溢出或编码不符均会失败。
 只有全部采集和编码检查通过才写 `capture.json`；失败目录只用于诊断，不作为已验收视频。
 
-## 本次验收记录
+## 摘要排版更新后的验收记录（2026-09-09）
 
-- 视频：144.00 秒，1600 × 900，25 fps，H.264 / yuv420p，6,863,999 bytes，无音轨。
-- SHA-256：`4e8cb2cf7f963e4e59a24725f28feb103e1918f5399729ebdd1098051199c50e`。
+- 视频：144.00 秒，1600 × 900，25 fps，H.264 / yuv420p，6,748,067 bytes，无音轨。
+- SHA-256：`c22ab0b791b320121cc8cf32444b0307a8d2f40cd53e7d63ce525947554aa481`。
+- 当前 demo surface：`c8849756ca9967e0d4a7406632f75ccd4939414fd253dc59d9e1c93e55066032`。
 - 6 项请求隔离/画面边界测试通过；浏览器完成 13 场景断言，错误为 0，意外网络请求为 0。
 - 原始运行 SHA-256 为 `a48471eb8791c103a81d1529e90d92063dd0f4fd3b08f07b5e218e493a50ba02`，
   没有改写。录制期间真实模型调用为 0，唯一提交被浏览器本地回放拦截。
@@ -59,8 +62,9 @@ make demo-video-agentic
   正式投稿仍须真人旁白、作者完整试听以及当年规则复核，不能以技术门禁代替。
 - 对成片顺序解码并提取 13 个场景中点帧，过程没有解码错误；又独立复算视频、13 张源画面、
   采集源码、当前演示面和原始运行摘要，全部与 manifest 一致。
-- `make quality` 通过：263 项后端测试、6 项新增 Node 检查，Ruff、mypy、TypeScript 和前端构建
-  正常；仍有 2 条既有依赖弃用警告。论文截图和构建校验保持通过，无须重建或改写论文。
+- 上一轮完整 `make quality` 为 286 项后端测试、6 项 Node 检查通过，Ruff、mypy、TypeScript
+  和前端构建正常；保留 2 条依赖弃用警告。本轮没有修改程序、录制脚本、原始报告或冻结实现，
+  重跑 6 项录制保护测试并重新采集、编码和审阅。论文截图和构建校验保持通过，无须重建论文。
 - 原有 `artifacts/demo/fallback-walkthrough.mp4` 保留，作为独立 registry 闭环/数据缺口材料；
   它不是当前 agentic 轨迹。8080 agentic 服务未重启或更换模式。
 
@@ -110,7 +114,7 @@ make demo-video-agentic
 # 交互输入真实录音路径；不要把尖括号占位符粘贴进 shell。
 read -r -p '作者录音文件的绝对路径: ' NARRATION_FILE
 uv run --project backend python scripts/mux_demo_narration.py \
-  --video artifacts/demo/agentic-replay-tyI28z/walkthrough.mp4 \
+  --video artifacts/demo/agentic-replay-2aEw0n/walkthrough.mp4 \
   --narration "$NARRATION_FILE" \
   --output artifacts/demo/agentic-narrated-review.mp4
 ```
