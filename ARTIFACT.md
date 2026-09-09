@@ -90,15 +90,15 @@ Choose another unused port if necessary. It does not run live-model evaluations.
   set -euo pipefail
   # Keep private configuration and all existing demo resources out of this run.
   export COMPOSE_DISABLE_ENV_FILE=1
-  unset COMPOSE_FILE COMPOSE_ENV_FILES COMPOSE_PROFILES
+  unset VIRTUAL_ENV COMPOSE_FILE COMPOSE_ENV_FILES COMPOSE_PROFILES
+  # Unit-test clients use their own default Host/CORS configuration.
+  unset ASKDU_TRUSTED_HOSTS ASKDU_CORS_ORIGINS
   export COMPOSE_PROJECT_NAME=askdu-artifact-reproduction
   export ASKDU_RUNTIME_VOLUME_NAME=askdu-artifact-reproduction-runtime
   export ASKDU_HTTP_PORT=8082 ASKDU_BIND_ADDRESS=127.0.0.1
   export ASKDU_E2E_BASE_URL=http://127.0.0.1:8082
   export ASKDU_CATALOG_MODE=single ASKDU_PLANNER_MODE=registry
   export ASKDU_LLM_API_KEY= ASKDU_LLM_BASE_URL=http://127.0.0.1:9
-  export ASKDU_CORS_ORIGINS=http://localhost:8082
-  export ASKDU_TRUSTED_HOSTS=localhost,127.0.0.1,api
   export ASKDU_RUN_RETENTION_HOURS=0
 
   make backend-sync frontend-install
@@ -109,6 +109,9 @@ Choose another unused port if necessary. It does not run live-model evaluations.
   make experiment-all
   make provider-contract ecs-config-check
   (cd frontend && npx playwright install chromium-headless-shell)
+  # Apply the isolated Web boundary only after in-process API tests finish.
+  export ASKDU_CORS_ORIGINS=http://localhost:8082
+  export ASKDU_TRUSTED_HOSTS=localhost,127.0.0.1,api
   make e2e
   make artifact-verify
 )

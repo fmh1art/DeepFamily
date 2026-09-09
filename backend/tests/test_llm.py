@@ -165,7 +165,10 @@ def test_model_planner_mode_requires_complete_server_configuration(tmp_path: obj
         build_run_service(settings)
 
 
+@patch.dict("os.environ", {}, clear=True)
 def test_project_model_profile_is_pinned_by_default() -> None:
+    # _env_file=None disables dotenv, not process variables. Check actual defaults
+    # independently of the isolated artifact guide's loopback provider override.
     settings = Settings(data_root=".", runtime_root="runtime", _env_file=None)
 
     assert settings.llm_base_url == PROJECT_LLM_ENDPOINT
@@ -173,6 +176,26 @@ def test_project_model_profile_is_pinned_by_default() -> None:
     assert settings.llm_api_style == "azure_chat"
     assert settings.llm_auth_scheme == "api_key"
     assert settings.llm_token_field == "max_completion_tokens"
+    assert settings.llm_allow_test_provider is False
+
+
+def test_model_profile_environment_overrides_are_loaded(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("ASKDU_LLM_BASE_URL", "http://127.0.0.1:9")
+    monkeypatch.setenv("ASKDU_LLM_MODEL", "contract-test-model")
+    monkeypatch.setenv("ASKDU_LLM_API_STYLE", "openai_base_url")
+    monkeypatch.setenv("ASKDU_LLM_AUTH_SCHEME", "bearer")
+    monkeypatch.setenv("ASKDU_LLM_TOKEN_FIELD", "max_tokens")
+    monkeypatch.setenv("ASKDU_LLM_ALLOW_TEST_PROVIDER", "false")
+    settings = Settings(data_root=".", runtime_root="runtime", _env_file=None)
+
+    assert settings.llm_base_url == "http://127.0.0.1:9"
+    assert settings.llm_model == "contract-test-model"
+    assert settings.llm_api_style == "openai_base_url"
+    assert settings.llm_auth_scheme == "bearer"
+    assert settings.llm_token_field == "max_tokens"
+    # Loading configuration does not authorize a non-project runtime provider.
     assert settings.llm_allow_test_provider is False
 
 
